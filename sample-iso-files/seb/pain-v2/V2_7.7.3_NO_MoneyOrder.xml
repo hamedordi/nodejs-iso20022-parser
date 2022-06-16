@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!-- SEB ISO20022 V02 MIG, 7.7.3 Money Order (Norway) -->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>MSGID-12345678909CHK</MsgId>
+			<CreDtTm>2020-05-16T09:30:47</CreDtTm>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<Grpg>MIXD</Grpg>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>DEBENTID-12345678909CHK</PmtInfId>
+			<PmtMtd>CHK</PmtMtd>
+			<PmtTpInf>
+				<ClrChanl>MPNS</ClrChanl>
+				<LclInstrm>
+					<Prtry>DO</Prtry>
+				</LclInstrm>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-16</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<BBAN>97500498491</BBAN>
+				</Id>
+				<Ccy>NOK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSENOKX</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>OWNREF-CHK11</InstrId>
+					<EndToEndId>ENDTOENDID-12345678909CHK</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="NOK">860.00</InstdAmt>
+				</Amt>
+				<ChqInstr>
+					<ChqTp>BCHQ</ChqTp>
+				</ChqInstr>
+				<Cdtr>
+					<Nm>Test Testsen</Nm>
+					<PstlAdr>
+						<StrtNm>Oslogate 1</StrtNm>
+						<PstCd>0101</PstCd>
+						<TwnNm>OSLO</TwnNm>
+						<Ctry>NO</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<RmtInf>
+					<Ustrd>Money Order 12345</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>

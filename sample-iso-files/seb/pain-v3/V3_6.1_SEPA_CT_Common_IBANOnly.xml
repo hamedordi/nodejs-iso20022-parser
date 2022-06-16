@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 6.1 SEPA CT IBAN ONLY -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>SEPACT1</MsgId>
+			<CreDtTm>2021-01-21T17:34:47-05:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>100.00</CtrlSum>
+			<InitgPty>
+				<Nm>PAYMENT FACTORY OY</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>55667755110004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>SEPACT1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>100.00</CtrlSum>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2021-01-21</ReqdExctnDt>
+			<Dbtr>
+				<Nm>PAYMENT FACTORY OUTLET</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>55667755110004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+				<CtryOfRes>SE</CtryOfRes>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE2650000000052018218220</IBAN>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+			<!-- Note: For IBAN only on Debtor side use Othr/Id: NOTPROVIDED - see below -->
+				<FinInstnId>
+					<Othr>
+						<Id>NOTPROVIDED</Id>
+					</Othr>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SLEV</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>SEPACT1-2</InstrId>
+					<EndToEndId>SEPACT1-2</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">100.00</InstdAmt>
+				</Amt>
+				<!-- Note: Creditor Agent should not be used at all for IBAN only on Creditor side -->
+				<Cdtr>
+					<Nm>European Payments Council</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>BE10310101725402</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RgltryRptg>
+					<DbtCdtRptgInd>DEBT</DbtCdtRptgInd>
+					<Dtls>
+						<Cd>101</Cd>
+					</Dtls>
+				</RgltryRptg>
+				<RmtInf>
+					<Ustrd>Invoice 12345</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

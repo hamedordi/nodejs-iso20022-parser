@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.054.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:camt.054.001.02 file:///C:/Users/s90251/Desktop/files/Template/camt.054.001.02.xsd">
+	<BkToCstmrDbtCdtNtfctn>
+		<GrpHdr>
+			<MsgId>3052555</MsgId>
+			<CreDtTm>2018-12-04T13:03:53+01:00</CreDtTm>
+			<MsgRcpt>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</MsgRcpt>
+			<AddtlInf>/CRED/</AddtlInf>
+		</GrpHdr>
+		<Ntfctn>
+			<Id>STOIID45181204130216000027</Id>
+			<CreDtTm>2018-12-04T13:02:16</CreDtTm>
+			<Acct>
+				<Id>
+					<Othr>
+						<Id>52950001691147</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+				<Ccy>DKK</Ccy>
+				<Ownr>
+					<Nm>TEST Customer</Nm>
+					<Id>
+						<OrgId>
+							<Othr>
+								<Id>00331127800005</Id>
+								<SchmeNm>
+									<Cd>BANK</Cd>
+								</SchmeNm>
+							</Othr>
+						</OrgId>
+					</Id>
+				</Ownr>
+				<Svcr>
+					<FinInstnId>
+						<BIC>ESSEDKKKXXX</BIC>
+					</FinInstnId>
+				</Svcr>
+			</Acct>
+			<RltdAcct>
+				<Id>
+					<Othr>
+						<Id>52950001692690</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+			</RltdAcct>
+			<TxsSummry>
+				<TtlCdtNtries>
+					<NbOfNtries>5</NbOfNtries>
+					<Sum>209169.29</Sum>
+				</TtlCdtNtries>
+			</TxsSummry>
+			<Ntry>
+				<NtryRef>CPH 18120464222-0000027</NtryRef>
+				<Amt Ccy="DKK">1287.45</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120464222-0000027</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>PRCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<MsgId>RP33811313934511</MsgId>
+							<AcctSvcrRef>STOBIR11181204123139007619000001</AcctSvcrRef>
+							<PmtInfId>RP33811313934511</PmtInfId>
+							<EndToEndId>NOTPROVIDED</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="DKK">1287.45</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<Purp>
+							<Cd>EPAY</Cd>
+						</Purp>
+						<RmtInf>
+							<Ustrd>PLFRKDF8164444</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>PLFRKDF8164444</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120464383-0000028</NtryRef>
+				<Amt Ccy="DKK">2493.01</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120464383-0000028</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>PRCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<MsgId>RP33811401664699</MsgId>
+							<AcctSvcrRef>STOBIR09181204124016001995000001</AcctSvcrRef>
+							<PmtInfId>RP33811401664699</PmtInfId>
+							<EndToEndId>NOTPROVIDED</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="DKK">2493.01</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<Purp>
+							<Cd>EPAY</Cd>
+						</Purp>
+						<RmtInf>
+							<Ustrd>TRGPFD58255555</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>TRGPFD58255555</AddtlNtryInf>
+			</Ntry>
+						<Ntry>
+				<NtryRef>CPH 18120463296-0000009</NtryRef>
+				<Amt Ccy="DKK">26105.83</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120463296-0000009</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>BOOK</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<MsgId>AQN20181204SC0002/185268</MsgId>
+							<AcctSvcrRef>STOESC05181204115051343425000025</AcctSvcrRef>
+							<PmtInfId>AQN20181204SC0002/740474</PmtInfId>
+							<InstrId>AQN201812040740504</InstrId>
+							<EndToEndId>AQN201812040740504</EndToEndId>
+							<Prtry>
+								<Tp>OrgnlAcctSvcrRef</Tp>
+								<Ref>STOESI05181204115051343425</Ref>
+							</Prtry>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="DKK">26105.83</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<TwnNm>Town name</TwnNm>
+									<AdrLine>Line 1</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>ESSEDKKKXXX</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>0777777</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>204SC0002/740474</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120463697-0000010</NtryRef>
+				<Amt Ccy="DKK">178125.00</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120463697-0000010</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ATXN</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<MsgId>GZIDDPOVB3</MsgId>
+							<AcctSvcrRef>CPHXMT01201812041205063697000001</AcctSvcrRef>
+							<PmtInfId>GZIDDPOVB3</PmtInfId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="DKK">178125.00</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RmtInf>
+							<Ustrd>F99347 148877</Ustrd>
+							<Ustrd>Transaction 8796</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+			</Ntry>
+						<Ntry>
+				<NtryRef>0004113</NtryRef>
+				<Amt Ccy="SEK">1158.00</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>STOI556510580440004113</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>NTAV</Cd>
+							<SubFmlyCd>NTAV</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>MSC MISCELLANEOUS</Cd>
+						<Issr>SEB</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="SEK">1158</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RmtInf>
+							<Ustrd>FTRPSDFV</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+			</Ntry>
+		</Ntfctn>
+		<Ntfctn>
+			<Id>STOIID45181204130216000029</Id>
+			<CreDtTm>2018-12-04T13:02:16</CreDtTm>
+			<Acct>
+				<Id>
+					<Othr>
+						<Id>52950001691155</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+				<Ccy>EUR</Ccy>
+				<Ownr>
+					<Nm>TEST Customer</Nm>
+					<Id>
+						<OrgId>
+							<Othr>
+								<Id>00331127800005</Id>
+								<SchmeNm>
+									<Cd>BANK</Cd>
+								</SchmeNm>
+							</Othr>
+						</OrgId>
+					</Id>
+				</Ownr>
+				<Svcr>
+					<FinInstnId>
+						<BIC>ESSEDKKKXXX</BIC>
+					</FinInstnId>
+				</Svcr>
+			</Acct>
+			<RltdAcct>
+				<Id>
+					<Othr>
+						<Id>52950001692704</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+			</RltdAcct>
+			<TxsSummry>
+				<TtlCdtNtries>
+					<NbOfNtries>13</NbOfNtries>
+					<Sum>4233.84</Sum>
+				</TtlCdtNtries>
+			</TxsSummry>
+			<Ntry>
+				<NtryRef>CPH 18120461070-0000021</NtryRef>
+				<Amt Ccy="EUR">83.79</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120461070-0000021</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU15181204095922000007000001</AcctSvcrRef>
+							<InstrId>20181203593497HB0163</InstrId>
+							<EndToEndId>NOTPROVIDED</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">83.79</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>OKOYFIHH</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>6961669</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>20181204MPA08-20</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120461073-0000022</NtryRef>
+				<Amt Ccy="EUR">94.59</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120461073-0000022</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU15181204095922000006000001</AcctSvcrRef>
+							<InstrId>20181201593619074088</InstrId>
+							<EndToEndId>NOTPROVIDED</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">94.59</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>OKOYFIHH</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>656452378853</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>20181204MPA04-20</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120461079-0000023</NtryRef>
+				<Amt Ccy="EUR">515.63</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120461079-0000023</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU22181204095927000007000001</AcctSvcrRef>
+							<InstrId>SCT1220325400</InstrId>
+							<EndToEndId>NOTPROVIDED</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">515.63</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>NDEAFIHH</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>201812042588WWP2</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120461080-0000024</NtryRef>
+				<Amt Ccy="EUR">290.05</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120461080-0000024</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU22181204095927000012000001</AcctSvcrRef>
+							<InstrId>32MD-83387830512</InstrId>
+							<EndToEndId>201812048E9036101551</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">290.05</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>DABAFIHH</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>002229500</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>SCTFBOUP2YVBD1D</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120464283-0000025</NtryRef>
+				<Amt Ccy="EUR">2797.39</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120464283-0000025</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU16181204122807000002000001</AcctSvcrRef>
+							<InstrId>SCT1220788283</InstrId>
+							<EndToEndId>04122018105632-4847</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">2797.39</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>NDEAFIHH</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>7999697</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>201812099988CEBT</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120464284-0000026</NtryRef>
+				<Amt Ccy="EUR">51.46</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120464284-0000026</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU16181204122807000003000001</AcctSvcrRef>
+							<InstrId>SCT1220773519</InstrId>
+							<EndToEndId>016603</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">51.46</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>NDEAFIHH</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>65678981120</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>201812042588CEBT</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120464294-0000027</NtryRef>
+				<Amt Ccy="EUR">36.18</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120464294-0000027</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU16181204122807000013000001</AcctSvcrRef>
+							<InstrId>32MD-83387843872</InstrId>
+							<EndToEndId>201812048E9036498535</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">36.18</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>DABAFIHH</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>65987661</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>SCTDBOWCPWPNA1D</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120464295-0000028</NtryRef>
+				<Amt Ccy="EUR">29.52</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120464295-0000028</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU16181204122807000014000001</AcctSvcrRef>
+							<InstrId>32MD-83387843874</InstrId>
+							<EndToEndId>201812048E9036498539</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">29.52</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>DABAFIHH</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>65695655</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>SCT1BOWXXXYHA1D</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120464304-0000029</NtryRef>
+				<Amt Ccy="EUR">174.74</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120464304-0000029</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU04181204122801000006000001</AcctSvcrRef>
+							<InstrId>201812045936190H8700</InstrId>
+							<EndToEndId>NOTPROVIDED</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">174.74</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>OKOYFIHH</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>65453634</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>20181204MPAOKI-2</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120464305-0000030</NtryRef>
+				<Amt Ccy="EUR">48.45</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120464305-0000030</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU04181204122801000007000001</AcctSvcrRef>
+							<InstrId>201812045UTH01527365</InstrId>
+							<EndToEndId>181204090016-1-2</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">48.45</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+								<Id>
+									<OrgId>
+										<Othr>
+											<Id>2222999-1</Id>
+											<SchmeNm>
+												<Prtry>PRO</Prtry>
+											</SchmeNm>
+										</Othr>
+									</OrgId>
+								</Id>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>OKOYFIHH</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>002222000</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>201812045UTH0152</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120464306-0000031</NtryRef>
+				<Amt Ccy="EUR">31.72</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120464306-0000031</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU04181204122801000008000001</AcctSvcrRef>
+							<InstrId>201812045UTH01790019</InstrId>
+							<EndToEndId>181204093623-1-1</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">31.72</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+								<Id>
+									<OrgId>
+										<Othr>
+											<Id>5556666-7</Id>
+											<SchmeNm>
+												<Prtry>PRO</Prtry>
+											</SchmeNm>
+										</Othr>
+									</OrgId>
+								</Id>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>OKOYFIHH</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>65646</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>201812045UTH0179</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120464318-0000032</NtryRef>
+				<Amt Ccy="EUR">67.08</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120464318-0000032</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU04181204122801000021000001</AcctSvcrRef>
+							<EndToEndId>NOTPROVIDED</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">67.08</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>POPFFI22</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>68996666</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>20181203476410IB</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>CPH 18120464319-0000033</NtryRef>
+				<Amt Ccy="EUR">13.24</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-04</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-04</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120464319-0000033</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>ESCT</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STOEQU04181204122801000022000001</AcctSvcrRef>
+							<EndToEndId>NOTPROVIDED</EndToEndId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="EUR">13.24</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>ITELFIHH</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>665765675</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>20181204496329M1</AddtlNtryInf>
+			</Ntry>
+		</Ntfctn>
+	</BkToCstmrDbtCdtNtfctn>
+</Document>

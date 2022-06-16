@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 6.1.2 SEPA SAME DAY EXECUTION -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>SEPA-SDE1</MsgId>
+			<CreDtTm>2020-03-31T09:30:47-05:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<InitgPty>
+				<Nm>PAYMENT FACTORY OY</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>55667755110004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>SEPA-SDE1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>true</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+				<LclInstrm>
+					<Cd>SDCL</Cd>
+				</LclInstrm>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-03-31</ReqdExctnDt>
+			<Dbtr>
+				<Nm>PAYMENT FACTORY OUTLET</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>55667755110004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+				<CtryOfRes>FI</CtryOfRes>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>FI9133010001105675</IBAN>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEFIHX</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SLEV</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>SEPA-SDE1</InstrId>
+					<EndToEndId>SEPA-SDE1</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">6205.75</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>NDEAFIHH</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>CREDITOR OY/FINANCE</Nm>
+					<PstlAdr>
+						<AdrLine>HELSINGINKATU 12, 001001 HKI</AdrLine>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FI6329501800020582</IBAN>
+					</Id>
+				</CdtrAcct>
+				<Purp>
+					<Cd>SUPP</Cd>
+				</Purp>
+				<RmtInf>
+					<Ustrd>RFB/RF9812345678901 SEPA SAME DAY EXECUTION</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

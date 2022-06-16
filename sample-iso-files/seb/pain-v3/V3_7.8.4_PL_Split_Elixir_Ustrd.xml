@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 7.8.4 Split payments - Unstructured VAT information (Elixir) -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>PL-CT1_USTR</MsgId>
+			<CreDtTm>2021-05-10T09:30:47-05:00</CreDtTm>
+			<NbOfTxs>3</NbOfTxs>
+			<InitgPty>
+				<Nm>PAYMENT FACTORY OY</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>55667755110004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>PL-CT1_USTR</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>3</NbOfTxs>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>NURG</Cd>
+				</SvcLvl>
+				<CtgyPurp>
+					<Cd>VATX</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2021-05-10</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>PL76237000080000000012345678</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEPLPW</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>PL-CT11_USTR</InstrId>
+					<EndToEndId>PL-CT11_USTR</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="PLN">36.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>INGBPLPW</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>CREDITOR NAME 1</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>PL21105015591000009012345678</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>/VAT/1.11/IDC/1080002093/INV/FV nr 0001/2021/03/475_v3/TXT/test of additional details of payment</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>PL-CT12_USTR</InstrId>
+					<EndToEndId>PL-CT12_USTR</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="PLN">28.98</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<ClrSysMmbId>
+							<ClrSysId>
+								<Cd>PLKNR</Cd>
+							</ClrSysId>
+							<MmbId>10501559</MmbId>
+						</ClrSysMmbId>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>CREDITOR NAME 2</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>95105015591000009012345678</Id>
+							<SchmeNm>
+								<Cd>BBAN</Cd>
+								<!-- Or Prtry/NRB 
+								<Prtry>NRB</Prtry>
+								-->
+							</SchmeNm>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>/VAT/1.12/IDC/1080002093/INV/FV nr 0001/2021/03/476_v3/TXT/test of additional details of payment</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>PL-CT13_USTR</InstrId>
+					<EndToEndId>PL-CT13_USTR</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="PLN">4.92</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>CITIPLPX</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>CREDITOR NAME 3</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>PL04103019577777800012345678</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>/VAT/1.13/IDC/1080002093/INV/FV nr 0001/2021/03/477_v3/TXT/test of additional details of payment</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

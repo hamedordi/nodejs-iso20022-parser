@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.02">
+	<pain.002.001.02>
+		<GrpHdr>
+			<MsgId>5151557</MsgId>
+			<CreDtTm>2020-05-17T14:19:26+01:00</CreDtTm>
+			<InitgPty>
+				<Id>
+				<OrgId>
+					<BIC>ESSESESSXXX</BIC>
+					<BkPtyId>00331127800005</BkPtyId>
+				</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<OrgnlGrpInfAndSts>
+			<OrgnlMsgId>147851789</OrgnlMsgId>
+			<OrgnlMsgNmId>pain.001.001.02</OrgnlMsgNmId>
+			<OrgnlNbOfTxs>4</OrgnlNbOfTxs>
+			<OrgnlCtrlSum>46727419.60</OrgnlCtrlSum>			
+			<GrpSts>PART</GrpSts>
+		</OrgnlGrpInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000001</StsId>
+			<OrgnlPmtInfId>46170657801 1</OrgnlPmtInfId>
+			<OrgnlInstrId>655551349 1</OrgnlInstrId>
+			<OrgnlEndToEndId>655551349 1</OrgnlEndToEndId>
+			<TxSts>ACSP</TxSts>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="EUR">5725.74</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 1</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000002</StsId>
+			<OrgnlPmtInfId>46170657801 1</OrgnlPmtInfId>
+			<OrgnlInstrId>655551349 2</OrgnlInstrId>
+			<OrgnlEndToEndId>655551349 2</OrgnlEndToEndId>
+			<TxSts>ACSP</TxSts>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="EUR">4771.31</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 2</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000003</StsId>
+			<OrgnlPmtInfId>46170657801 1</OrgnlPmtInfId>
+			<OrgnlInstrId>655551349 3</OrgnlInstrId>
+			<OrgnlEndToEndId>655551349 3</OrgnlEndToEndId>
+			<TxSts>ACSP</TxSts>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="EUR">444.22</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 3.</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000004</StsId>
+			<OrgnlPmtInfId>46170657801 1</OrgnlPmtInfId>
+			<OrgnlInstrId>655551349 4</OrgnlInstrId>
+			<OrgnlEndToEndId>655551349 4</OrgnlEndToEndId>
+			<TxSts>RJCT</TxSts>
+			<StsRsnInf>
+				<StsRsn>
+					<Cd>NARR</Cd>
+				</StsRsn>
+				<AddtlStsRsnInf>RC04 InvalidCreditorBankIdentifier</AddtlStsRsnInf>
+			</StsRsnInf>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="EUR">46716478.33</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 4</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+	</pain.002.001.02>
+</Document>

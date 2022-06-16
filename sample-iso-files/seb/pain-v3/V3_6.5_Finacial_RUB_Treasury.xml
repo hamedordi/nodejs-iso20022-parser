@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 6.5 Payments in RUB to Russia -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>FX828078-155597</MsgId>
+			<CreDtTm>2020-07-06T13:45:40</CreDtTm>
+			<NbOfTxs>2</NbOfTxs>
+			<CtrlSum>20000.00</CtrlSum>
+			<InitgPty>
+				<Nm>Initiator AB</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>556677889900004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<!--For RUB treasury payment from Swedish accounts-->
+			<PmtInfId>FX828078-155597</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>10000.00</CtrlSum>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>URGP</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2021-01-21</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Debtor AB</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>556677889900004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>55558201111</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+				<Ccy>RUB</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>FX828078-155597</InstrId>
+					<EndToEndId>FX828078-155597</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="RUB">10000.00</InstdAmt>
+				</Amt>
+				<IntrmyAgt1>
+					<FinInstnId>
+						<BIC>IMBKRUMM</BIC>
+						<!-- Correspondent bank in Russia -->
+					</FinInstnId>
+				</IntrmyAgt1>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>DABADKKK</BIC>
+						<!-- Beneficiary bank -->
+						<ClrSysMmbId>
+							<ClrSysId>
+								<Cd>RUCBC</Cd>
+								<!-- Indication that it is RU clearing code -->
+							</ClrSysId>
+							<MmbId>044525545</MmbId>
+							<!-- BIK code -->
+						</ClrSysMmbId>
+					</FinInstnId>
+					<BrnchId>
+						<Id>30101810300000000545</Id>
+						<!-- Clearing account for beneficiary bank -->
+					</BrnchId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Creditor AB</Nm>
+					<Id>
+						<OrgId>
+							<Othr>
+								<Id>7710030411</Id>
+								<!-- INN code (Tax identification number) -->
+								<SchmeNm>
+									<Cd>TXID</Cd>
+								</SchmeNm>
+							</Othr>
+						</OrgId>
+					</Id>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>30111819874563213059</Id>
+							<!-- Beneficiary account -->
+							<SchmeNm>
+								<Cd>BBAN</Cd>
+							</SchmeNm>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<RgltryRptg>
+					<DbtCdtRptgInd>DEBT</DbtCdtRptgInd>
+					<Dtls>
+						<Cd>940</Cd>
+					</Dtls>
+				</RgltryRptg>
+				<RgltryRptg>
+					<DbtCdtRptgInd>CRED</DbtCdtRptgInd>
+					<Dtls>
+						<Inf>VO60081</Inf>
+						<!--Purpose code of the payment. Required for Russian Central bank -->
+					</Dtls>
+				</RgltryRptg>
+				<RmtInf>
+					<Ustrd>remitance information</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<!--For RUB treasury payments from non-Swedish accounts-->
+			<PmtInfId>B095673a26143</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>10000.00</CtrlSum>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>URGP</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2021-01-21</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Debtor</Nm>
+				<PstlAdr>
+					<Ctry>FI</Ctry>
+				</PstlAdr>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>FI7933019095000344</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEFIHXXXX</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>25165156156156</InstrId>
+					<EndToEndId>C2-44039a75-3383</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="RUB">10000.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>BRATRU6B</BIC>
+						<ClrSysMmbId>
+							<ClrSysId>
+								<Cd>RUCBC</Cd>
+								<!-- Indication that it is RU clearing code -->
+							</ClrSysId>
+							<MmbId>//RU042520842</MmbId>
+							<!-- BIK code - Clearing code in the form provided in example "//RU" and then clearing code -->
+						</ClrSysMmbId>
+					</FinInstnId>
+					<BrnchId>
+						<Id>3010181085004250842</Id>
+						<!-- Beneficiary bank clearing account at central bank -->
+					</BrnchId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Creditor Name</Nm>
+					<PstlAdr>
+						<Ctry>RU</Ctry>
+						<AdrLine>Komsomolskaya str, block 66, flat 1</AdrLine>
+						<AdrLine>10, 665717, BRATSK</AdrLine>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>40802810100000009018</Id>
+							<SchmeNm>
+								<Cd>BBAN</Cd>
+							</SchmeNm>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VO20200, INN380408870546, Invoice nr 08/2020</Ustrd>
+					<!-- VO code and INN number to be stated under unstructured remitance information. -->
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

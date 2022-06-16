@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SEB ISO20022 V02 MIG, 7.7.1 Credit transfer with Structured info: Invoice no, negative invoice, KID, negative KID -->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>MSGID-12345678901</MsgId>
+			<CreDtTm>2020-05-16T09:30:47</CreDtTm>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<Grpg>MIXD</Grpg>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<BkPtyId>00330720910005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>DEBENTID-12345678901</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<ClrChanl>MPNS</ClrChanl>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-16</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>NO5997501521764</IBAN>
+				</Id>
+				<Ccy>NOK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSENOKX</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>OWNREF1</InstrId>
+					<EndToEndId>ENDTOENDID-12345678901</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="NOK">6000.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>DNBANOKK</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Produkter AS</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>NO3773620501236</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Strd>
+						<RfrdDocAmt>
+							<DuePyblAmt Ccy="NOK">7406.00</DuePyblAmt>
+						</RfrdDocAmt>
+						<CdtrRefInf>
+							<CdtrRefTp>
+								<Cd>SCOR</Cd>
+							</CdtrRefTp>
+							<CdtrRef>300050760400008599692</CdtrRef>
+						</CdtrRefInf>
+					</Strd>
+					<Strd>
+						<RfrdDocAmt>
+							<CdtNoteAmt Ccy="NOK">2406.00</CdtNoteAmt>
+						</RfrdDocAmt>
+						<CdtrRefInf>
+							<CdtrRefTp>
+								<Cd>SCOR</Cd>
+							</CdtrRefTp>
+							<CdtrRef>158354688029</CdtrRef>
+						</CdtrRefInf>
+					</Strd>
+					<Strd>
+						<RfrdDocInf>
+							<RfrdDocTp>
+								<Cd>CINV</Cd>
+							</RfrdDocTp>
+							<RfrdDocNb>456456</RfrdDocNb>
+						</RfrdDocInf>
+						<RfrdDocAmt>
+							<RmtdAmt Ccy="NOK">2600.00</RmtdAmt>
+						</RfrdDocAmt>
+					</Strd>
+					<Strd>
+						<RfrdDocInf>
+							<RfrdDocTp>
+								<Cd>CREN</Cd>
+							</RfrdDocTp>
+							<RfrdDocNb>9460027</RfrdDocNb>
+						</RfrdDocInf>
+						<RfrdDocAmt>
+							<CdtNoteAmt Ccy="NOK">1600.00</CdtNoteAmt>
+						</RfrdDocAmt>
+					</Strd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>

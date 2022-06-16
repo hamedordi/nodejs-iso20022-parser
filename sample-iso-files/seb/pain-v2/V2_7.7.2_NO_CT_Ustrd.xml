@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SEB ISO20022 V02 MIG, 7.7.2 Credit transfer with Untructured info or no remittance info -->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>MSGID-NORMTF</MsgId>
+			<CreDtTm>2020-05-16T09:30:47</CreDtTm>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>2</NbOfTxs>
+			<Grpg>MIXD</Grpg>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>DEBENTID-NORMTF</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<ClrChanl>MPNS</ClrChanl>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-16</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<BBAN>97500498491</BBAN>
+				</Id>
+				<Ccy>NOK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSENOKX</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>NORMTF1</InstrId>
+					<EndToEndId>NORMTF1</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="NOK">6000.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>DNBANOKK</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Produkter AS</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>NO3773620501236</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>REMITTANCE INFORMATION</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>NORMTF2</InstrId>
+					<EndToEndId>NORMTF2</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="NOK">7000.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>DNBANOKK</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Produkter AS</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>NO3773620501236</IBAN>
+					</Id>
+				</CdtrAcct>
+				<!-- No Remittance information -> No advice  -->
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>

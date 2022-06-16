@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SEB ISO20022 V02 MIG, 7.2.2 Credit transfer Payment Slip with unstructured info (Gik 01 and Fi-card 73)-->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>MSGID-12345678904</MsgId>
+			<CreDtTm>2020-05-16T09:30:47</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<Grpg>MIXD</Grpg>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>DEBENTID-12345678904</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<LclInstrm>
+					<Prtry>IBK73</Prtry>
+				</LclInstrm>
+				<!--	or
+				<LclInstrm>
+					<Prtry>IBK01</Prtry>
+				</LclInstrm>
+-->
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-16</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>DK1152950001691147</IBAN>
+				</Id>
+				<Ccy>DKK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEDKKK</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>OWNREF-Webservice</InstrId>
+					<EndToEndId>ENDTOENDID-12345678904</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="DKK">10660.00</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>CREDITOR</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<PrtryAcct>
+							<Id>6222226</Id>
+						</PrtryAcct>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>MAX 1435 CHARACTERS</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 6.1 SEPA CT with Equivalent Amount -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>SEPAEqvtAmt</MsgId>
+			<CreDtTm>2021-07-31T06:16:00+02:00</CreDtTm>
+			<NbOfTxs>2</NbOfTxs>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>SEPAEqvtAmt</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>2</NbOfTxs>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2021-07-31</ReqdExctnDt>
+			<Dbtr>
+				<Nm>TEST AB</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE1150000000054401060156</IBAN>
+				</Id>
+				<Ccy>SEK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SLEV</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>SEPAEqvtAmt1</InstrId>
+					<EndToEndId>SEPAEqvtAmt1</EndToEndId>
+				</PmtId>
+				<Amt>
+					<EqvtAmt>
+						<Amt Ccy="SEK">2500.00</Amt>
+						<CcyOfTrf>EUR</CcyOfTrf>
+					</EqvtAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>ASNBNL21</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>TEST NAME</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>NL12ASNB0123456789</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<!-- Remittance Information with Unstructured information is ok with Equivalent Amount -->
+					<Ustrd>Inv. 12345</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>SEPAEqvtAmt2</InstrId>
+					<EndToEndId>SEPAEqvtAmt2</EndToEndId>
+				</PmtId>
+				<Amt>
+					<EqvtAmt>
+						<Amt Ccy="SEK">1500.00</Amt>
+						<CcyOfTrf>EUR</CcyOfTrf>
+					</EqvtAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>BBRUBEBB010</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Test Name2</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>BE10310101725402</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<!-- Only Remittance Information with Structured information without ReferredDocumentAmount can be used for Equivalent Amount -->
+					<Strd>
+						<CdtrRefInf>
+							<Tp>
+								<CdOrPrtry>
+									<Cd>SCOR</Cd>
+								</CdOrPrtry>
+							</Tp>
+							<Ref>RF12345</Ref>
+						</CdtrRefInf>
+					</Strd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO20022 V02 MIG, 8.1 Salaries -->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>2020051612345</MsgId>
+			<CreDtTm>2020-05-17T10:32:00</CreDtTm>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>6</NbOfTxs>
+			<Grpg>MIXD</Grpg>
+			<InitgPty>
+				<Nm>INITIATOR NAME</Nm>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<!-- SEPA Salary -->
+			<PmtInfId>111006020210 1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+				<CtgyPurp>SALA</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Debtor in Finland</Nm>
+				<CtryOfRes>FI</CtryOfRes>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>FI9133010001105675</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEFIHX</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SLEV</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>2020051612345 1 CUST41</InstrId>
+					<EndToEndId>2020051612345 1 CUST41</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">502233.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>NDEAFIHH</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>CREDITOR FOR SALARY</Nm>
+					<CtryOfRes>FI</CtryOfRes>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FI4315903000023463</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>SALARY PAYMENT</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<PmtInfId>DEBENTID-12345678901</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Prtry>MPNS</Prtry>
+				</SvcLvl>
+				<CtgyPurp>SALA</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<BBAN>97501521764</BBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSENOKX</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>OWNREF1</InstrId>
+					<EndToEndId>ENDTOENDID-12345678901</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="NOK">6000.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>DNBANOKK</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>CREDITOR NORWAY</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>NO3773620501236</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Salary</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<PmtInfId>DKSALA_1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<ClrChanl>MPNS</ClrChanl>
+				<CtgyPurp>SALA</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DK DEBTOR</Nm>
+				<PstlAdr>
+					<Ctry>DK</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<BBAN>52950009100067</BBAN>
+				</Id>
+				<Ccy>DKK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEDKKK</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>DKSALA_1</InstrId>
+					<EndToEndId>DKSALA_1</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="DKK">30.00</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>CAPE Webconsult Aps</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<BBAN>20001234567890</BBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>SALA</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<!-- Salary for Sweden with Bankgiro number as debit account -->
+			<PmtInfId>SESALA_1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<ClrChanl>MPNS</ClrChanl>
+				<CtgyPurp>SALA</CtgyPurp>
+			</PmtTpInf>
+			<!-- Note!, this date refers to creditors' credit date, not to debtor's debit date -->
+			<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+			<Dbtr>
+				<Nm>SE DEBTOR</Nm>
+				<PstlAdr>
+					<Ctry>SE</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<PrtryAcct>
+						<Id>51158384</Id>
+					</PrtryAcct>
+				</Id>
+				<Ccy>SEK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<ClrSysMmbId>
+						<Id>SESBA9900</Id>
+					</ClrSysMmbId>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>SESALA_1</InstrId>
+					<EndToEndId>SESALA_1</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="SEK">30.00</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>Test Testsson</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>SE9293000000001250835392</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Lön</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<!-- Salary for Sweden with account number as debit acount -->
+			<PmtInfId>SESALA_2</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<ClrChanl>MPNS</ClrChanl>
+				<CtgyPurp>SALA</CtgyPurp>
+			</PmtTpInf>
+			<!-- Note!, this date refers to debtor's debit date, not to creditors' credit date. The execution date should be one day prior to the creditor's credit date  -->
+			<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+			<Dbtr>
+				<Nm>SE DEBTOR</Nm>
+				<PstlAdr>
+					<Ctry>SE</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<BBAN>55551012345</BBAN>
+				</Id>
+				<Ccy>SEK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>SESALA_2</InstrId>
+					<EndToEndId>SESALA_2</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="SEK">30.00</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>Test Testsson</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>SE9293000000001250835392</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Lön2</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<!-- Salary for UK -->
+			<PmtInfId>UKSALA_1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<ClrChanl>MPNS</ClrChanl>
+				<CtgyPurp>SALA</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+			<Dbtr>
+				<Nm>SE DEBTOR</Nm>
+				<PstlAdr>
+					<Ctry>SE</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>GB89ESSE40486562587010</IBAN>
+				</Id>
+				<Ccy>GBP</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEGB2L</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>UKSALA_1</InstrId>
+					<EndToEndId>UKSALA_1</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="GBP">300.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<ClrSysMmbId>
+							<Id>GBDSC123456</Id>
+						</ClrSysMmbId>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Test Name</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<BBAN>31926819</BBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Salary</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>

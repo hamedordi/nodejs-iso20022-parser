@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO20022 V02 MIG, 7.12.3  (UK) / Faster Payment-->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>FSP-2020051612345</MsgId>
+			<CreDtTm>2020-05-17T08:00:47-05:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<Grpg>SNGL</Grpg>
+			<InitgPty>
+				<Nm>INITG</Nm>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>FSP-2020051612345</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Prtry>URNS</Prtry>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+			<Dbtr>
+				<Nm>UK COMPANY</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<BBAN>99434111</BBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEGB2L</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>FSP-2020051612345</InstrId>
+					<EndToEndId>FSP-2020051612345</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="GBP">41.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<ClrSysMmbId>
+							<Id>GBDSC123456</Id>
+						</ClrSysMmbId>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>UK Creditor</Nm>
+					<PstlAdr>
+						<Ctry>GB</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<BBAN>31926819</BBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>UK 140 CHARS</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>

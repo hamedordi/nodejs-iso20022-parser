@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;rdf;smil;svg;wml">
+		<File FilePath="pain.002_V2_4.2.1_ACTC.xml" HomeFolder="Yes"/>
+		<File FilePath="pain.002_V2_4.2.1_RJCT.xml" HomeFolder="Yes"/>
+		<File FilePath="pain.002_V2_4.2.4_ACSP.xml" HomeFolder="Yes"/>
+		<File FilePath="pain.002_V2_4.2.5_RJCT.xml" HomeFolder="Yes"/>
+		<File FilePath="pain.002_V2_4.2.6_ACWC.xml" HomeFolder="Yes"/>
+		<File FilePath="pain.002_V2_4.2.7_PART.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_6.1.1_SEPA_CT_FI.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_6.1_SEPA_CT_Common.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_6.2.1_International_Common.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_6.2.2_International_SEBSG_HK.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_6.3_MT101.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_6.4_CHEQUE.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_6.5_Financial.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.1.1_CN_Local_Normal.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.1.2_CN_Local_Express.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.10.1_SE_BG_PG.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.10.2_SE_CT.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.10.3_SE_MoneyOrder.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.12.1_UK_BACS.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.12.2_UK_CHAPS.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.12.3_UK_FasterPayment.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.13.1_US_CHIPS.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.13.2_US_FEDWire.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.2.1_DK_CT.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.2.2_DK_G01F73.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.2.3_DK_Giro_FI_STRD.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.3_EE.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.4_FI_and_DE_EXPRESS.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.5_LV.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.6_LT.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.7.1_NO_CT.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.7.2_NO_CT_Ustd.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.7.3_NO_MoneyOrder.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.8.1_PL_Elixir.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.8.2_PL_Sorbnet.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.8.3_PL_SSBE_TAX.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.8.3_PL_TAX.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_7.8.4_PL_SSBE.xml" HomeFolder="Yes"/>
+		<File FilePath="V2_8.1_Salaries.xml" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XSL Files" ExtStr="xsl;xslt"/>
+	<Folder FolderName="XQuery Files" ExtStr="xq;xql;xquery"/>
+	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
+	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd">
+		<File FilePath="pain.001.001.02.xsd" HomeFolder="Yes"/>
+		<File FilePath="pain.002.001.02.xsd" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="Entities" ExtStr="ent"/>
+</Project>

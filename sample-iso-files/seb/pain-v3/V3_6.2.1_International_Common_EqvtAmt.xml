@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 6.2.1 International common and urgent payment  with Equivalent Amount -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>TestEqvtAmtXB1</MsgId>
+			<CreDtTm>2021-07-31T06:16:00+02:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>TestEqvtAmtXB1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>NURG</Cd>
+				</SvcLvl>
+				<CtgyPurp>
+					<Cd>SUPP</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2021-07-31</ReqdExctnDt>
+			<Dbtr>
+				<Nm>TEST AB</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE1150000000054401060156</IBAN>
+				</Id>
+				<Ccy>SEK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>TestEqvtAmtXB1</InstrId>
+					<EndToEndId>TestEqvtAmtXB1</EndToEndId>
+				</PmtId>
+				<Amt>
+					<EqvtAmt>
+						<Amt Ccy="SEK">25000.00</Amt>
+						<CcyOfTrf>NOK</CcyOfTrf>
+					</EqvtAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>ESSENOKX</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>TEST NAME</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>NO6497501522159</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+				<!-- Only Remittance Information with Unstructured information can be used with Equivalent Amount -->
+					<Ustrd>Inv. 12345</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

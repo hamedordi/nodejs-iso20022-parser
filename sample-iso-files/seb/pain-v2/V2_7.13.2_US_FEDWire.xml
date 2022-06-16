@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO20022 V02 MIG, 7.13.2  (US) / FEDWire Payment-->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>USFEDA-2020051612345</MsgId>
+			<CreDtTm>2020-05-17T09:40:53</CreDtTm>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<Grpg>MIXD</Grpg>
+			<InitgPty>
+				<Nm>INITG</Nm>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>USFEDA-2020051612345</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Prtry>URGP</Prtry>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+			<Dbtr>
+				<Nm>US COMPANY</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<BBAN>00007781</BBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEUS33</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>USFEDA-2020051612345</InstrId>
+					<EndToEndId>USFEDA-2020051612345</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="USD">376.26</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<ClrSysMmbId>
+							<Id>USABA123456789</Id>
+						</ClrSysMmbId>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>US Creditor</Nm>
+					<PstlAdr>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<BBAN>2070004088771</BBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>US MAX 140 LETTERS</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>

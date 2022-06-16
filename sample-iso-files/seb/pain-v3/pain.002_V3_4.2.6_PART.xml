@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.002.001.03 pain.002.001.03.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.03">
+	<CstmrPmtStsRpt>
+		<GrpHdr>
+			<MsgId>5609457</MsgId>
+			<CreDtTm>2022-04-15T09:27:26</CreDtTm>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>ESSESESS</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+						<Othr>
+							<Id>1234567890</Id>
+							<SchmeNm>
+								<Cd>CUST</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<OrgnlGrpInfAndSts>
+			<OrgnlMsgId>65201</OrgnlMsgId>
+			<OrgnlMsgNmId>pain.001.001.03</OrgnlMsgNmId>
+			<OrgnlNbOfTxs>2</OrgnlNbOfTxs>
+			<OrgnlCtrlSum>2491.75</OrgnlCtrlSum>
+		</OrgnlGrpInfAndSts>
+		<OrgnlPmtInfAndSts>
+			<OrgnlPmtInfId>65201 1</OrgnlPmtInfId>
+			<OrgnlNbOfTxs>2</OrgnlNbOfTxs>
+			<OrgnlCtrlSum>2491.75</OrgnlCtrlSum>
+			<PmtInfSts>PART</PmtInfSts>
+			<!-- C-level	 -->
+			<TxInfAndSts>
+				<StsId>STOESI05202004010841583174000001</StsId>
+				<OrgnlInstrId>645346300087</OrgnlInstrId>
+				<OrgnlEndToEndId>65201 3 201D</OrgnlEndToEndId>
+				<TxSts>ACWC</TxSts>
+				<StsRsnInf>
+					<Rsn>
+						<Cd>DT06</Cd>
+					</Rsn>
+					<AddtlInf>ExecutionDateChanged</AddtlInf>
+				</StsRsnInf>
+				<AcctSvcrRef>STOESI05202004010841583174000001</AcctSvcrRef>
+				<OrgnlTxRef>
+					<Amt>
+						<InstdAmt Ccy="DKK">1066.00</InstdAmt>
+					</Amt>
+					<ReqdExctnDt>2022-04-15</ReqdExctnDt>
+					<Cdtr>
+						<Nm>Company</Nm>
+					</Cdtr>
+				</OrgnlTxRef>
+			</TxInfAndSts>
+			<TxInfAndSts>
+				<StsId>STOESI05202004010841583174000002</StsId>
+				<OrgnlInstrId>645346300089</OrgnlInstrId>
+				<OrgnlEndToEndId>65201 3 203DD </OrgnlEndToEndId>
+				<TxSts>RJCT</TxSts>
+				<StsRsnInf>
+					<Rsn>
+						<Cd>AM03</Cd>
+					</Rsn>
+					<AddtlInf>NotAllowedCurrency</AddtlInf>
+				</StsRsnInf>
+				<AcctSvcrRef>STOESI05202004010841583174000002</AcctSvcrRef>
+				<OrgnlTxRef>
+					<Amt>
+						<InstdAmt Ccy="USD">1425.75</InstdAmt>
+					</Amt>
+					<ReqdExctnDt>2022-04-15</ReqdExctnDt>
+					<Cdtr>
+						<Nm>Company 2</Nm>
+					</Cdtr>
+				</OrgnlTxRef>
+			</TxInfAndSts>
+		</OrgnlPmtInfAndSts>
+	</CstmrPmtStsRpt>
+</Document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO20022 V02 MIG, 7.10.2 Direct Credits  (Sweden)-->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>SEBBANDOMSTRD</MsgId>
+			<CreDtTm>2020-05-17T09:24:07</CreDtTm>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<Grpg>MIXD</Grpg>
+			<InitgPty>
+				<Nm>SE COMPANY</Nm>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>SEBBANDOMSTRD1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<ClrChanl>MPNS</ClrChanl>
+				<LclInstrm>
+					<Cd>SDCL</Cd>
+				</LclInstrm>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+			<Dbtr>
+				<Nm>SE COMPANY</Nm>
+				<Id>
+					<OrgId>
+						<BkPtyId>5566885544</BkPtyId>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE1150000000054401060156</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>SEBBANDOMSTRD1</InstrId>
+					<EndToEndId>SEBBANDOMSTRD11</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="SEK">22.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>SWEDSESSXXX</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Test Testsson</Nm>
+					<PstlAdr>
+						<StrtNm>NACKAGATAN 14</StrtNm>
+						<PstCd>11647</PstCd>
+						<TwnNm>STOCKHOLM</TwnNm>
+						<Ctry>SE</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>SE2980000832791234567890</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Fakt 1234</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>

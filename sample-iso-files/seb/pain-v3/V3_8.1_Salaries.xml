@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 8.1 Salaries -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>1110060210</MsgId>
+			<CreDtTm>2022-05-06T10:32:00</CreDtTm>
+			<NbOfTxs>5</NbOfTxs>
+			<InitgPty>
+				<Nm>Initiator Name</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<!-- SEPA Salary -->
+			<PmtInfId>111006020210 1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>true</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+				<CtgyPurp>
+					<Cd>SALA</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2022-05-06</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Debtor in Finland</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+				<CtryOfRes>FI</CtryOfRes>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>FI9133010001105675</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEFIHX</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SLEV</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>11100602210 1 CUST41</InstrId>
+					<EndToEndId>11100602210 1 CUST41</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">500.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>NDEAFIHH</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Creditor Name</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FI4315903000023463</IBAN>
+					</Id>
+				</CdtrAcct>
+				<Purp>
+					<Cd>SALA</Cd>
+				</Purp>
+				<RmtInf>
+					<Ustrd>SALARY</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<!-- Salary for Norway -->
+			<PmtInfId>DEBENTID-12345678901</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>true</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<PmtTpInf>
+				<SvcLvl>
+					<Prtry>MPNS</Prtry>
+				</SvcLvl>
+				<CtgyPurp>
+					<Cd>SALA</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2022-05-06</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>97501521764</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+				<Ccy>NOK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSENOKX</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>OWNREF1</InstrId>
+					<EndToEndId>ENDTOENDID-12345678901</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="NOK">6000.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>DNBANOKK</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<!-- Note! For Norway the Creditor Name stated in the pain.001 file will be reflected back in the pain.002 status message in case a Salary payment is accepted or rejected. -->
+					<Nm>Creditor Name</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>NO3773620501236</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Salary</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<!-- Salary for Sweden with Bankgiro number as debit account -->
+			<PmtInfId>TEST_202205061_ACC_Z3_Sala</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>true</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<PmtTpInf>
+				<SvcLvl>
+					<Prtry>MPNS</Prtry>
+				</SvcLvl>
+				<CtgyPurp>
+					<Cd>SALA</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<!-- Note!,  refers to the debtor's debit date, not to creditors' credit date as it did in local Bankgiro lön format. The execution date should then be one day prior to the creditor's credit date -->
+			<ReqdExctnDt>2022-05-06</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Debtor Name</Nm>
+				<PstlAdr>
+					<StrtNm>Testgatan 13</StrtNm>
+					<PstCd>98765</PstCd>
+					<TwnNm>STOCKHOLM</TwnNm>
+					<Ctry>SE</Ctry>
+				</PstlAdr>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE1150000000054401060156</IBAN>
+				</Id>
+				<Ccy>SEK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>InstrId_202205061_ACCT_1ZX_Sala</InstrId>
+					<EndToEndId>EndToEnd_202205061_ACCT_1ZX_Sala</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="SEK">4.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>NDEASESS</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<!-- Note! For Sweden the Creditor Name stated in the pain.001 file will be reflected back in the pain.002 status message in case a Salary payment is accepted or rejected. -->
+					<!-- Full name of the Creditor is a must for domestic salaries within Sweden -->
+					<Nm>Test Name</Nm>
+					<PstlAdr>
+						<StrtNm>Testgatan 41</StrtNm>
+						<PstCd>12345</PstCd>
+						<TwnNm>STOCKHOLM</TwnNm>
+						<Ctry>SE</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>SE9293000000001234567890</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Lön</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<!-- Salary for Denmark -->
+			<PmtInfId>DK_SALA_TRUE2</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>true</BtchBookg>
+			<PmtTpInf>
+				<CtgyPurp>
+					<Cd>SALA</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2022-05-06</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Debtor Name</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>52950009100067</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+				<Ccy>DKK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEDKKK</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>DK_SALA_TRUE2_22</InstrId>
+					<EndToEndId>DK_SALA_TRUE2_22</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="DKK">400.00</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<!-- Note! For Denmark the Creditor Name stated in the pain.001 file will be reflected back in the pain.002 status message in case a Salary payment is accepted or rejected. -->
+					<Nm>Employee 1</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>43103627341784</Id>
+							<SchmeNm>
+								<Cd>BBAN</Cd>
+							</SchmeNm>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>SALARY 1</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<!-- Salary for UK -->
+			<PmtInfId>Salary 123456</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>true</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<PmtTpInf>
+				<CtgyPurp>
+					<Cd>SALA</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2022-05-06</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR NAME</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>GB89ESSE40486562587010</IBAN>
+				</Id>
+				<Ccy>GBP</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEGB2L</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>Salary 1</InstrId>
+					<EndToEndId>Salary 1</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="GBP">4.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<ClrSysMmbId>
+							<ClrSysId>
+								<Cd>GBDSC</Cd>
+							</ClrSysId>
+							<MmbId>123456</MmbId>
+						</ClrSysMmbId>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Test Name</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>987654</Id>
+							<SchmeNm>
+								<Cd>BBAN</Cd>
+							</SchmeNm>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>SALARY</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SEB ISO20022 V02 MIG, 6.2.1 International common payment -->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>1277545454545</MsgId>
+			<CreDtTm>2020-05-16T17:28:00</CreDtTm>
+			<BtchBookg>true</BtchBookg>
+			<NbOfTxs>4</NbOfTxs>
+			<Grpg>MIXD</Grpg>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>1277545454545 1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<InstrPrty>NORM</InstrPrty>
+				<SvcLvl>
+					<Prtry>NURG</Prtry>
+				</SvcLvl>
+				<CtgyPurp>SUPP</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-16</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Payer</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE3550000000054028206633</IBAN>
+				</Id>
+				<Ccy>USD</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>1277545454545 2-USD</InstrId>
+					<EndToEndId>1277545454545 2-USD</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="USD">60020.80</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>CHASUS33</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Seller Ltd</Nm>
+					<PstlAdr>
+						<StrtNm>Broadway 225</StrtNm>
+						<PstCd>10020</PstCd>
+						<TwnNm>NEW YORK</TwnNm>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<BBAN>900251</BBAN>
+					</Id>
+				</CdtrAcct>
+				<Purp>
+					<Prtry>SUPP</Prtry>
+				</Purp>
+				<RgltryRptg>
+					<DbtCdtRptgInd>DEBT</DbtCdtRptgInd>
+					<RgltryDtls>
+						<Cd>101</Cd>
+					</RgltryDtls>
+				</RgltryRptg>
+				<RmtInf>
+					<Ustrd>INV.5001224555802 </Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<PmtInfId>1277545454545 2</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Prtry>NURG</Prtry>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-16</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Buyer</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE3550000000054028206633</IBAN>
+				</Id>
+				<Ccy>USD</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>1277545454545 3-USD </InstrId>
+					<EndToEndId>1277545454545 3-USD</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="USD">50000.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>BARCGB2L</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Surplus EDI</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>GB25NWBK60161331256811</IBAN>
+					</Id>
+				</CdtrAcct>
+				<Purp>
+					<Prtry>SUPP</Prtry>
+				</Purp>
+				<RgltryRptg>
+					<DbtCdtRptgInd>DEBT</DbtCdtRptgInd>
+					<RgltryDtls>
+						<Cd>101</Cd>
+					</RgltryDtls>
+				</RgltryRptg>
+				<RmtInf>
+					<Ustrd>INV.CORR DOUBLE PMT </Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<!-- Samples of payments to Russia -->
+		<PmtInf>
+			<PmtInfId>1277545454545 4564</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<InstrPrty>NORM</InstrPrty>
+				<SvcLvl>
+					<Prtry>NURG</Prtry>
+				</SvcLvl>
+				<CtgyPurp>SUPP</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-16</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Payer</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE4550000000059478209973</IBAN>
+				</Id>
+				<Ccy>RUB</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>1277545454545 2-RUB</InstrId>
+					<EndToEndId>1277545454545 2-RUB</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="RUB">60020.80</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<CmbndId>
+							<BIC>IMBKRUMM</BIC>
+							<ClrSysMmbId>
+								<Id>RUCBC041708716</Id>
+							</ClrSysMmbId>
+							<Nm>VRU MOSCOW INDUST.BANK Test CITY</Nm>
+							<PstlAdr>
+								<PstCd>601500</PstCd>
+								<TwnNm>GUS-KHRUSTALNIY Test CITY</TwnNm>
+								<Ctry>RU</Ctry>
+							</PstlAdr>
+						</CmbndId>
+					</FinInstnId>
+					<BrnchId>
+						<Id>30101810200000000716</Id>
+					</BrnchId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Seller Ltd</Nm>
+					<PstlAdr>
+						<StrtNm>Street</StrtNm>
+						<PstCd>10020</PstCd>
+						<TwnNm>MOSCOW</TwnNm>
+						<Ctry>RU</Ctry>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<TaxIdNb>3304005609</TaxIdNb>
+							<PrtryId>
+								<Id>17278-RUB</Id>
+							</PrtryId>
+						</OrgId>
+					</Id>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<BBAN>40702810600280000547</BBAN>
+					</Id>
+				</CdtrAcct>
+				<Purp>
+					<Prtry>SUPP</Prtry>
+				</Purp>
+				<RgltryRptg>
+					<DbtCdtRptgInd>DEBT</DbtCdtRptgInd>
+					<RgltryDtls>
+						<Cd>101</Cd>
+					</RgltryDtls>
+				</RgltryRptg>
+				<RmtInf>
+					<Ustrd>INV.5001224555802 </Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<PmtInfId>1277545454545 98797</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Prtry>NURG</Prtry>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-16</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Buyer</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE3550000000054021006633</IBAN>
+				</Id>
+				<Ccy>SEK</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>1277545454545 355-USD </InstrId>
+					<EndToEndId>1277545454545 355-USD</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="USD">50000.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>BARCGB2L</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Surplus EDI</Nm>
+					<Id>
+						<OrgId>
+							<PrtryId>
+								<Id>500112-UK</Id>
+							</PrtryId>
+						</OrgId>
+					</Id>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>GB25NWBK60161331256811</IBAN>
+					</Id>
+				</CdtrAcct>
+				<Purp>
+					<Prtry>SUPP</Prtry>
+				</Purp>
+				<RgltryRptg>
+					<DbtCdtRptgInd>DEBT</DbtCdtRptgInd>
+					<RgltryDtls>
+						<Cd>101</Cd>
+					</RgltryDtls>
+				</RgltryRptg>
+				<RmtInf>
+					<Ustrd>INV.CORR DOUBLE PMT </Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>

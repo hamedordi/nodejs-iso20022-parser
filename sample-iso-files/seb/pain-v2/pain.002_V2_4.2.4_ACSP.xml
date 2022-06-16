@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.002.001.02 file:///Z:/1.%20Product%20Management%20(new%20structure)/Client%20Data%20Services/Formats%20&amp;%20Standards/ISO%2020022/Payment%20Initiation/MIG%20documentation%20version%202/Drafting/V2_MIG_Samples_pain.001_pain.002/pain.002.001.02.xsd">
+	<pain.002.001.02>
+		<GrpHdr>
+			<MsgId>47497</MsgId>
+			<CreDtTm>2020-05-17T11:03:13+01:00</CreDtTm>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<BIC>ESSESESSXXX</BIC>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<OrgnlGrpInfAndSts>
+			<OrgnlMsgId>461746178</OrgnlMsgId>
+			<OrgnlMsgNmId>pain.001.001.02</OrgnlMsgNmId>
+			<OrgnlNbOfTxs>5</OrgnlNbOfTxs>
+			<OrgnlCtrlSum>1351831.00</OrgnlCtrlSum>
+			<GrpSts>ACSP</GrpSts>
+		</OrgnlGrpInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000001</StsId>
+			<OrgnlPmtInfId>5678151 1</OrgnlPmtInfId>
+			<OrgnlInstrId>3441414985091 1</OrgnlInstrId>
+			<OrgnlEndToEndId>3441414985091 1SEK</OrgnlEndToEndId>
+			<TxSts>ACSP</TxSts>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="SEK">50457.00</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 1</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000002</StsId>
+			<OrgnlPmtInfId>5678151 1</OrgnlPmtInfId>
+			<OrgnlInstrId>3441414985091 2</OrgnlInstrId>
+			<OrgnlEndToEndId>3441414985091 2</OrgnlEndToEndId>
+			<TxSts>ACSP</TxSts>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="SEK">151.00</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 2</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000003</StsId>
+			<OrgnlPmtInfId>5678151 1</OrgnlPmtInfId>
+			<OrgnlInstrId>3441414985091 3</OrgnlInstrId>
+			<OrgnlEndToEndId>3441414985091 3</OrgnlEndToEndId>
+			<TxSts>ACSP</TxSts>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="SEK">52431.00</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 3</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000004</StsId>
+			<OrgnlPmtInfId>5678151 1</OrgnlPmtInfId>
+			<OrgnlInstrId>3441414985091 4</OrgnlInstrId>
+			<OrgnlEndToEndId>3441414985091 4</OrgnlEndToEndId>
+			<TxSts>ACSP</TxSts>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="SEK">7341.00</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 4</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000005</StsId>
+			<OrgnlPmtInfId>5678151 1</OrgnlPmtInfId>
+			<OrgnlInstrId>3441414985091 5</OrgnlInstrId>
+			<OrgnlEndToEndId>3441414985091 5</OrgnlEndToEndId>
+			<TxSts>ACSP</TxSts>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="SEK">1241451.00</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 5</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+	</pain.002.001.02>
+</Document>

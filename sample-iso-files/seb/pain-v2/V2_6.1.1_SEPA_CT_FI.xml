@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SEB ISO20022 V02 MIG, 6.1.1 SEPA in FInland (AOS2) -->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>20200516123</MsgId>
+			<CreDtTm>2020-05-16T09:30:47-05:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<Grpg>MIXD</Grpg>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>20200516123 14101 1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-16</ReqdExctnDt>
+			<Dbtr>
+				<Nm>PAYMENT FACTORY OUTLET</Nm>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+				<CtryOfRes>FI</CtryOfRes>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>FI9133010001105675</IBAN>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEFIHX</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SLEV</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>20200516123</InstrId>
+					<EndToEndId>20200516123</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">6205.75</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>NDEAFIHH</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>CREDITOR OY/FINANCE</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FI6329501800020582</IBAN>
+					</Id>
+				</CdtrAcct>
+				<Purp>
+					<Cd>SUPP</Cd>
+				</Purp>
+				<RmtInf>
+					<Ustrd>RFB/RF9812345678901/CREN/RFB/12345678901/AMN/50.00/CINV/RFB/456456/AMN/2500.00/CREN/RFB/9460027/AMN/500.00</Ustrd>
+					<Strd>
+						<RfrdDocAmt>
+							<RmtdAmt Ccy="EUR">250</RmtdAmt>
+						</RfrdDocAmt>
+						<CdtrRefInf>
+							<CdtrRefTp>
+								<Cd>SCOR</Cd>
+							</CdtrRefTp>
+							<CdtrRef>RF9812345678901</CdtrRef>
+						</CdtrRefInf>
+					</Strd>
+					<Strd>
+						<RfrdDocAmt>
+							<CdtNoteAmt Ccy="EUR">50</CdtNoteAmt>
+						</RfrdDocAmt>
+						<CdtrRefInf>
+							<CdtrRefTp>
+								<Cd>SCOR</Cd>
+							</CdtrRefTp>
+							<CdtrRef>12345678901</CdtrRef>
+						</CdtrRefInf>
+					</Strd>
+					<Strd>
+						<RfrdDocInf>
+							<RfrdDocTp>
+								<Cd>CINV</Cd>
+							</RfrdDocTp>
+							<RfrdDocNb>456456</RfrdDocNb>
+						</RfrdDocInf>
+						<RfrdDocAmt>
+							<RmtdAmt Ccy="EUR">2500.00</RmtdAmt>
+						</RfrdDocAmt>
+					</Strd>
+					<Strd>
+						<RfrdDocInf>
+							<RfrdDocTp>
+								<Cd>CREN</Cd>
+							</RfrdDocTp>
+							<RfrdDocNb>9460027</RfrdDocNb>
+						</RfrdDocInf>
+						<RfrdDocAmt>
+							<CdtNoteAmt Ccy="EUR">500.00</CdtNoteAmt>
+						</RfrdDocAmt>
+					</Strd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>

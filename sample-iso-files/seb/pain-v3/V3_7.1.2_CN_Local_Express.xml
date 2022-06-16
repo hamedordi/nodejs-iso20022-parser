@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 7.1.2. CN Local Express payments -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>MsgID 201612211644</MsgId>
+			<CreDtTm>2020-03-31T05:59:12</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<InitgPty>
+				<Nm>ABS Shanghai</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331770980005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>CN-URGENT-1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>URGP</Cd>
+				</SvcLvl>
+				<CtgyPurp>
+					<Cd>SUPP</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-03-31</ReqdExctnDt>
+			<Dbtr>
+				<Nm>苏尔寿有限公司</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>99173455</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSECNSH</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>InsID 201612211644</InstrId>
+					<EndToEndId>EtoE 201612211644</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="CNY">21.03</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<ClrSysMmbId>
+							<ClrSysId>
+								<Cd>CNAPS</Cd>
+							</ClrSysId>
+							<MmbId>323290000016</MmbId>
+						</ClrSysMmbId>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>联想电脑有限</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>99316845030008428</Id>
+							<SchmeNm>
+								<Cd>BBAN</Cd>
+							</SchmeNm>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>货款</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 7.10.2  Credit transfer Same day clearing -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>SEBBANDOMSTRD</MsgId>
+			<CreDtTm>2021-05-10T09:24:07</CreDtTm>
+			<NbOfTxs>3</NbOfTxs>
+			<CtrlSum>300.00</CtrlSum>
+			<InitgPty>
+				<Nm>SE COMPANY</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>55667755110004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<!-- Same day transfer option-->
+		<PmtInf>
+			<PmtInfId>SEBBANDOMSTRD1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>NURG</Cd>
+				</SvcLvl>
+				<LclInstrm>
+					<Cd>SDCL</Cd>
+				</LclInstrm>
+			</PmtTpInf>
+			<ReqdExctnDt>2021-05-10</ReqdExctnDt>
+			<Dbtr>
+				<Nm>SE COMPANY</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00333311110005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE1150000000054401060156</IBAN>
+				</Id>
+				<Ccy>SEK</Ccy>
+				<!-- BBAN account format as alternative debtor account 
+				<Id>
+					<Othr>
+						<Id>54401060156</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+				<Ccy>SEK</Ccy>
+				-->
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<!-- Payment to Swedbank in IBAN -->
+				<PmtId>
+					<InstrId>SEBBANDOMSTRD1</InstrId>
+					<EndToEndId>SEBBANDOMSTRD11</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="SEK">100.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>SWEDSESSXXX</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Test Testsson</Nm>
+					<!-- Full name of the Creditor is a must for domestic payments within Sweden -->
+					<PstlAdr>
+						<StrtNm>Testgatan 4</StrtNm>
+						<PstCd>11424</PstCd>
+						<TwnNm>STOCKHOLM</TwnNm>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>SE2980000832791234567890</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Max 12 char</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<!-- Payment to Swedbank in BBAN -->
+				<PmtId>
+					<InstrId>SEBBANDOMSTRD2</InstrId>
+					<EndToEndId>SEBBANDOMSTRD22</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="SEK">100.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<ClrSysMmbId>
+							<ClrSysId>
+								<Cd>SESBA</Cd>
+							</ClrSysId>
+							<MmbId>8327</MmbId>
+						</ClrSysMmbId>
+					</FinInstnId>
+					<!-- BIC can also be used as Creditor Agent for BBAN
+					<FinInstnId>
+						<BIC>SWEDSESSXXX</BIC>
+					<FinInstnId>
+				-->
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Test Testsson</Nm>
+					<!-- Full name of the Creditor is a must for domestic payments within Sweden -->
+					<PstlAdr>
+						<StrtNm>Testgatan 4</StrtNm>
+						<PstCd>11424</PstCd>
+						<TwnNm>STOCKHOLM</TwnNm>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>832791234567890</Id>
+							<SchmeNm>
+								<Cd>BBAN</Cd>
+							</SchmeNm>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Max 12 char</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<!-- Payment to Swedbank without Creditor Agent. Creditor Agent can be left without population, as the Swedish BBAN (in full) and IBAN contain the bank identification -->
+				<PmtId>
+					<InstrId>SEBBANDOMSTRD3</InstrId>
+					<EndToEndId>SEBBANDOMSTRD33</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="SEK">100.00</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>Test Testsson</Nm>
+					<!-- Full name of the Creditor is a must for domestic payments within Sweden -->
+					<PstlAdr>
+						<StrtNm>Testgatan 4</StrtNm>
+						<PstCd>11424</PstCd>
+						<TwnNm>STOCKHOLM</TwnNm>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>SE2980000832791234567890</IBAN>
+					</Id>
+					<!-- BBAN account format as alternative debtor account 
+				<Id>
+					<Othr>
+						<Id>832791234567890</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+				<Ccy>SEK</Ccy>
+				-->
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Max 12 char</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

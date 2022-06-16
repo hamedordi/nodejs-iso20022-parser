@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 7.8.2 Normal local express payment (Sorbnet) -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>PL-EX1</MsgId>
+			<CreDtTm>2021-05-10T09:30:47-05:00</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<InitgPty>
+				<Nm>PAYMENT FACTORY OY</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>55667755110004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>PL-EX1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>URGP</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2021-05-10</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>PL76237000080000000012345678</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEPLPW</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>PL-EX11</InstrId>
+					<EndToEndId>PL-EX11</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="PLN">600.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>INGBPLPW</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>CREDITOR NAME</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>PL21105015591000009012345678</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>298/2020/S</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

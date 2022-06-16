@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.02">
+	<pain.002.001.02>
+		<GrpHdr>
+			<MsgId>34290</MsgId>
+			<CreDtTm>2020-05-17T14:29:29+01:00</CreDtTm>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<BIC>ESSESESSXXX</BIC>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<OrgnlGrpInfAndSts>
+			<OrgnlMsgId>5454446</OrgnlMsgId>
+			<OrgnlMsgNmId>pain.001.001.02</OrgnlMsgNmId>
+			<OrgnlNbOfTxs>3</OrgnlNbOfTxs>
+			<OrgnlCtrlSum>11543.00</OrgnlCtrlSum>
+			<GrpSts>ACWC</GrpSts>
+		</OrgnlGrpInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000001</StsId>
+			<OrgnlPmtInfId>4891289 001</OrgnlPmtInfId>
+			<OrgnlInstrId>2578925782577 001</OrgnlInstrId>
+			<OrgnlEndToEndId>2578925782577 001</OrgnlEndToEndId>
+			<TxSts>ACWC</TxSts>
+			<StsRsnInf>
+				<StsRsn>
+					<Cd>NARR</Cd>
+				</StsRsn>
+				<AddtlStsRsnInf>DT06 ExecutionDateChanged</AddtlStsRsnInf>
+			</StsRsnInf>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="GBP">2100.00</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 1</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000002</StsId>
+			<OrgnlPmtInfId>4891289 001</OrgnlPmtInfId>
+			<OrgnlInstrId>2578925782577 002</OrgnlInstrId>
+			<OrgnlEndToEndId>2578925782577 002</OrgnlEndToEndId>
+			<TxSts>ACWC</TxSts>
+			<StsRsnInf>
+				<StsRsn>
+					<Cd>NARR</Cd>
+				</StsRsn>
+				<AddtlStsRsnInf>DT06 ExecutionDateChanged</AddtlStsRsnInf>
+			</StsRsnInf>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="GBP">5259.00</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 2</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000003</StsId>
+			<OrgnlPmtInfId>4891289 001</OrgnlPmtInfId>
+			<OrgnlInstrId>2578925782577 003</OrgnlInstrId>
+			<OrgnlEndToEndId>2578925782577 003</OrgnlEndToEndId>
+			<TxSts>ACWC</TxSts>
+			<StsRsnInf>
+				<StsRsn>
+					<Cd>NARR</Cd>
+				</StsRsn>
+				<AddtlStsRsnInf>DT06 ExecutionDateChanged</AddtlStsRsnInf>
+			</StsRsnInf>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="GBP">4184.00</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 3</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+	</pain.002.001.02>
+</Document>

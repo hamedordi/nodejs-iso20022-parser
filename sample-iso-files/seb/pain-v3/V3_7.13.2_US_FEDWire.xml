@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 7.13.2 Express payment (US) / FEDWIRE-->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>USFEDWUSTRD4</MsgId>
+			<CreDtTm>2020-03-31T09:40:53</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>43.00</CtrlSum>
+			<InitgPty>
+				<Nm>INITG</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00330989060004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>USFEDWUSTRD2</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>URGP</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-03-31</ReqdExctnDt>
+			<Dbtr>
+				<Nm>US COMPANY</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>00000270</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+				<Ccy>USD</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEUS33</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>USFEDWUSTRD11</InstrId>
+					<EndToEndId>USFEDWUSTRD1</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="USD">43.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<ClrSysMmbId>
+							<ClrSysId>
+								<Cd>USABA</Cd>
+							</ClrSysId>
+							<MmbId>123456789</MmbId>
+						</ClrSysMmbId>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>US Creditor</Nm>
+					<PstlAdr>
+						<Ctry>US</Ctry>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>2070004088771</Id>
+							<SchmeNm>
+								<Cd>BBAN</Cd>
+							</SchmeNm>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>US MAX 140 LETTERS</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>
+

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 7.11. Domestic Credit transfer, Ukraine -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>MSGID-12345678901</MsgId>
+			<CreDtTm>2020-03-31T09:30:47</CreDtTm>
+			<NbOfTxs>2</NbOfTxs>
+			<CtrlSum>21332.00</CtrlSum>
+			<InitgPty>
+				<Nm>PAYMENT FACTORY</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>55667755110004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>DEBENTID-12345678902</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>false</BtchBookg>
+			<PmtTpInf>
+				<InstrPrty>NORM</InstrPrty>
+				<SvcLvl>
+					<Cd>NURG</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-03-31</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Payer</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>55667755110004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>UA123456780000012345678900001</IBAN>
+				</Id>
+				<Ccy>UAH</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEUAUK</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>Max10char</InstrId>
+					<EndToEndId>ENDTOENDID-12345678901</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="UAH">10666.00</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>Receiver Name</Nm>
+					<PstlAdr>
+						<StrtNm>Kazymyra Malevycha St</StrtNm>
+						<PstCd>123456</PstCd>
+						<TwnNm>Kiev</TwnNm>
+						<Ctry>UA</Ctry>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<Othr>
+								<!--Tax Identification of Beneficiary -->
+								<Id>66677788</Id>
+								<SchmeNm>
+									<Cd>TXID</Cd>
+								</SchmeNm>
+							</Othr>
+						</OrgId>
+					</Id>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>UA01234567000000001230987654321</IBAN>
+					</Id>
+				</CdtrAcct>
+				<Tax>
+					<Rcrd>
+						<TaxAmt>
+							<TtlAmt Ccy="UAH">439.00</TtlAmt>
+						</TaxAmt>
+						<!-- VAT included, amount specfied in <TaxAmt>, if no VAT use code VTAN and no <TaxAmt> -->
+						<AddtlInf>VTIN</AddtlInf>
+					</Rcrd>
+				</Tax>
+				<RmtInf>
+					<!-- Additional information needed and entered in unstructured remittance information. Details can be found in Excel appendix of the MIG -->
+					<Ustrd>OPL. 123ABC KTR. AABB112233 INV. 123456789 DOG. AAAADDDD11 FROM 200301</Ustrd>
+					<Ustrd>SPF. PAYMENT NO. 6 DOP.SOGL. BBBBEEEE22 FROM 200401</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>Max10char</InstrId>
+					<EndToEndId>ENDTOENDID-12345678902</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="UAH">10666.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<!-- Creditor Agent organisation identification -->
+						<ClrSysMmbId>
+							<ClrSysId>
+								<Prtry>UKRBC</Prtry>
+							</ClrSysId>
+							<MmbId>6667788</MmbId>
+						</ClrSysMmbId>
+						<Nm>UABANK</Nm>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Receiver Name2</Nm>
+					<PstlAdr>
+						<StrtNm>Kazymyra Malevycha St</StrtNm>
+						<PstCd>123456</PstCd>
+						<TwnNm>Kiev</TwnNm>
+						<Ctry>UA</Ctry>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<Othr>
+								<!--Tax Identification of Beneficiary -->
+								<Id>12345678</Id>
+								<SchmeNm>
+									<Cd>TXID</Cd>
+								</SchmeNm>
+							</Othr>
+						</OrgId>
+					</Id>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>UA01234567000000001230987612345</IBAN>
+					</Id>
+				</CdtrAcct>
+				<Tax>
+					<Rcrd>
+						<TaxAmt>
+							<TtlAmt Ccy="UAH">439.00</TtlAmt>
+						</TaxAmt>
+						<!-- VAT included, amount specfied in <TaxAmt>, if no VAT use code VTAN and no <TaxAmt> -->
+						<AddtlInf>VTIN</AddtlInf>
+					</Rcrd>
+				</Tax>
+				<RmtInf>
+					<!-- Additional information needed and entered in unstructured remittance information. Details can be found in Excel appendix of the MIG -->
+					<Ustrd>OPL. 123ABC KTR. AABB112233 INV. 987654321 DOG. AAAADDDD11 FROM 200501</Ustrd>
+					<Ustrd>SPF. PAYMENT NO. 6 DOP.SOGL. BBBBEEEE22 FROM 200601</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>100800000251400008</MsgId>
+			<CreDtTm>2020-07-06T13:16:03</CreDtTm>
+			<NbOfTxs>2</NbOfTxs>
+			<CtrlSum>6481.49</CtrlSum>
+			<InitgPty>
+				<Nm>Initiator AB</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>55667788990004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>100800000251400008</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<NbOfTxs>2</NbOfTxs>
+			<CtrlSum>6481.49</CtrlSum>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>URGP</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-07-06</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Debtor AB</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>55667788990004</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE7250000000052099996695</IBAN>
+				</Id>
+				<Ccy>USD</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>10080000025140000811</InstrId>
+					<EndToEndId>10080000025140000811</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="USD">5481.49</InstdAmt>
+				</Amt>
+				<IntrmyAgt1>
+					<FinInstnId>
+						<BIC>CHASUS33</BIC>
+						<!-- correspondent bank for CHASGB2L to receive USD. If Omitted SEB choose corresponding -->
+					</FinInstnId>
+				</IntrmyAgt1>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>CHASGB2L</BIC>
+						<!-- account holding bank-->
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Creditor AB</Nm>
+					<PstlAdr>
+						<Ctry>CH</Ctry>
+						<AdrLine>Test Business Center</AdrLine>
+						<AdrLine>Case Postale, Geneve</AdrLine>
+					</PstlAdr>
+					<Id>
+						<OrgId>
+							<Othr>
+								<Id>E103194266</Id>
+							</Othr>
+						</OrgId>
+					</Id>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>GB04CHAS60924241002463</IBAN>
+						<!-- beneficiary account-->
+					</Id>
+				</CdtrAcct>
+				<RgltryRptg>
+					<DbtCdtRptgInd>DEBT</DbtCdtRptgInd>
+					<Dtls>
+						<Cd>793</Cd>
+					</Dtls>
+				</RgltryRptg>
+				<RmtInf>
+					<Ustrd>remitance information</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>10080000025140000822</InstrId>
+					<EndToEndId>10080000025140000822</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="USD">1000.00</InstdAmt>
+				</Amt>
+				<IntrmyAgt1>
+					<FinInstnId>
+						<BIC>CHASUS33</BIC>
+						<!-- correspondent bank for CHASGB2L to receive USD. If Omitted SEB choose corresponding -->
+					</FinInstnId>
+				</IntrmyAgt1>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>CHASGB2L</BIC>
+						<!-- account holding bank-->
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Creditor AB</Nm>
+					<PstlAdr>
+						<Ctry>CH</Ctry>
+						<AdrLine>Test Business Center</AdrLine>
+						<AdrLine>Case Postale, Geneve</AdrLine>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>GB04CHAS60924241002463</IBAN>
+						<!-- beneficiary account-->
+					</Id>
+				</CdtrAcct>
+				<RgltryRptg>
+					<DbtCdtRptgInd>DEBT</DbtCdtRptgInd>
+					<Dtls>
+						<Cd>793</Cd>
+					</Dtls>
+				</RgltryRptg>
+				<RmtInf>
+					<Ustrd>remitance information</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

@@ -1,0 +1,160 @@
+{
+	"?xml": {
+		"attributes@_": {
+			"@_version": "1.0",
+			"@_encoding": "UTF-8"
+		}
+	},
+	"Document": {
+		"BkToCstmrAcctRpt": {
+			"GrpHdr": {
+				"MsgId": 2965311,
+				"CreDtTm": "2018-11-20T00:52:10Z",
+				"MsgRcpt": {
+					"Id": {
+						"OrgId": {
+							"Othr": {
+								"Id": 331127800005,
+								"SchmeNm": {
+									"Cd": "BANK"
+								}
+							}
+						}
+					}
+				},
+				"AddtlInf": "/BALN/"
+			},
+			"Rpt": {
+				"Id": "STOIID05181120014820000008",
+				"ElctrncSeqNb": 4441,
+				"LglSeqNb": 4441,
+				"CreDtTm": "2018-11-20T00:00:01+01:00",
+				"Acct": {
+					"Id": {
+						"Othr": {
+							"Id": 52950001691147,
+							"SchmeNm": {
+								"Cd": "BBAN"
+							}
+						}
+					},
+					"Ccy": "DKK",
+					"Ownr": {
+						"Nm": "TEST Customer",
+						"Id": {
+							"OrgId": {
+								"Othr": {
+									"Id": 331127800005,
+									"SchmeNm": {
+										"Cd": "BANK"
+									}
+								}
+							}
+						}
+					},
+					"Svcr": {
+						"FinInstnId": {
+							"BIC": "ESSEDKKKXXX"
+						}
+					}
+				},
+				"Bal": [
+					{
+						"Tp": {
+							"CdOrPrtry": {
+								"Cd": "PRCD"
+							},
+							"SubTp": {
+								"Cd": "INTM"
+							}
+						},
+						"CdtLine": {
+							"Incl": false
+						},
+						"Amt": {
+							"$text": 0,
+							"attributes@_": {
+								"@_Ccy": "DKK"
+							}
+						},
+						"CdtDbtInd": "CRDT",
+						"Dt": {
+							"DtTm": "2018-11-19T23:59:59+01:00"
+						}
+					},
+					{
+						"Tp": {
+							"CdOrPrtry": {
+								"Cd": "CLBD"
+							},
+							"SubTp": {
+								"Cd": "INTM"
+							}
+						},
+						"CdtLine": {
+							"Incl": false
+						},
+						"Amt": {
+							"$text": 0,
+							"attributes@_": {
+								"@_Ccy": "DKK"
+							}
+						},
+						"CdtDbtInd": "CRDT",
+						"Dt": {
+							"DtTm": "2018-11-20T00:00:01+01:00"
+						}
+					},
+					{
+						"Tp": {
+							"CdOrPrtry": {
+								"Cd": "CLAV"
+							},
+							"SubTp": {
+								"Cd": "INTM"
+							}
+						},
+						"CdtLine": {
+							"Incl": false
+						},
+						"Amt": {
+							"$text": 0,
+							"attributes@_": {
+								"@_Ccy": "DKK"
+							}
+						},
+						"CdtDbtInd": "CRDT",
+						"Dt": {
+							"DtTm": "2018-11-20T00:00:01+01:00"
+						}
+					},
+					{
+						"Tp": {
+							"CdOrPrtry": {
+								"Cd": "OPBD"
+							}
+						},
+						"CdtLine": {
+							"Incl": false
+						},
+						"Amt": {
+							"$text": 0,
+							"attributes@_": {
+								"@_Ccy": "DKK"
+							}
+						},
+						"CdtDbtInd": "CRDT",
+						"Dt": {
+							"DtTm": "2018-11-20T00:00:01+01:00"
+						}
+					}
+				]
+			}
+		},
+		"attributes@_": {
+			"@_xmlns": "urn:iso:std:iso:20022:tech:xsd:camt.052.001.02",
+			"@_xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+			"@_xsi:schemaLocation": "urn:iso:std:iso:20022:tech:xsd:camt.052.001.02 file:///C:/Users/s90251/Desktop/files/Template/camt.052.001.02.xsd"
+		}
+	}
+}

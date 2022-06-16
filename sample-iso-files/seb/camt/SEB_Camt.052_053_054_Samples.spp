@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;rdf;smil;svg;wml">
+		<File FilePath="camt.052_EndOfDay.xml" HomeFolder="Yes"/>
+		<File FilePath="camt.052_MiddleOfDay.xml" HomeFolder="Yes"/>
+		<File FilePath="camt.052_StartOfDay.xml" HomeFolder="Yes"/>
+		<File FilePath="camt.053_CashPool.xml" HomeFolder="Yes"/>
+		<File FilePath="camt.053_CashPool_InternalTrnsfers.xml" HomeFolder="Yes"/>
+		<File FilePath="camt.053_Charges.xml" HomeFolder="Yes"/>
+		<File FilePath="camt.053_SE_AutoGiro.xml" HomeFolder="Yes"/>
+		<File FilePath="camt.054_CashPool_Credit.xml" HomeFolder="Yes"/>
+		<File FilePath="camt.054_CashPool_Debit.xml" HomeFolder="Yes"/>
+		<File FilePath="Camt.054_SampleInterests.xml" HomeFolder="Yes"/>
+		<File FilePath="camt.054_SE_CRED.xml" HomeFolder="Yes"/>
+		<File FilePath="camt054_Credit_with CREN_NO.xml" HomeFolder="Yes"/>
+		<File FilePath="DK_camt.053.xml" HomeFolder="Yes"/>
+		<File FilePath="DK_CreditTransfer_camt.054_Credit.xml" HomeFolder="Yes"/>
+		<File FilePath="DK_DirecDebit_camt.054.xml" HomeFolder="Yes"/>
+		<File FilePath="FI_camt.053.xml" HomeFolder="Yes"/>
+		<File FilePath="NO_camt.053.xml" HomeFolder="Yes"/>
+		<File FilePath="NO_camt.053_e.xml" HomeFolder="Yes"/>
+		<File FilePath="NO_CreditTransfer_camt.054_Credit.xml" HomeFolder="Yes"/>
+		<File FilePath="NO_DirectDebit_camt.054.xml" HomeFolder="Yes"/>
+		<File FilePath="SE_camt.053.xml" HomeFolder="Yes"/>
+		<File FilePath="SE_camt.053_C_BGC.xml" HomeFolder="Yes"/>
+		<File FilePath="SE_camt.054_Credit.xml" HomeFolder="Yes"/>
+		<File FilePath="SE_camt.054_Debit.xml" HomeFolder="Yes"/>
+		<File FilePath="SE_CRE_camt.054.xml" HomeFolder="Yes"/>
+		<File FilePath="SE_DirectDebit_camt.054.xml" HomeFolder="Yes"/>
+		<File FilePath="SE_DirectDebit_camt.054_Credit.xml" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XSL Files" ExtStr="xsl;xslt"/>
+	<Folder FolderName="XQuery Files" ExtStr="xq;xql;xquery"/>
+	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
+	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd">
+		<File FilePath="camt.053.001.02.xsd" HomeFolder="Yes"/>
+		<File FilePath="camt.054.001.02.xsd" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="Entities" ExtStr="ent"/>
+</Project>

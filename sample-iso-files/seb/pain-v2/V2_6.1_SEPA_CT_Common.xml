@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SEB ISO20022 V02 MIG, 6.1 SEPA and SEPA Same Day Execution-->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>2020051612345</MsgId>
+			<CreDtTm>2020-05-16T09:30:47-05:00</CreDtTm>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>2</NbOfTxs>
+			<Grpg>MIXD</Grpg>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>2020051612345</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-16</ReqdExctnDt>
+			<Dbtr>
+				<Nm>PAYMENT FACTORY OUTLET</Nm>
+				<PstlAdr>
+					<StrtNm>Norrmalmstorg</StrtNm>
+					<BldgNb>12 (2nd floor)</BldgNb>
+					<PstCd>S-11141</PstCd>
+					<TwnNm>STOCKHOLM</TwnNm>
+					<Ctry>SE</Ctry>
+				</PstlAdr>
+				<CtryOfRes>SE</CtryOfRes>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE2650000000052018218220</IBAN>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<UltmtDbtr>
+				<Nm>Buyer AB</Nm>
+				<PstlAdr>
+					<StrtNm>STORGATAN 22</StrtNm>
+					<PstCd>S-50155</PstCd>
+					<TwnNm>GOTEBORG</TwnNm>
+					<Ctry>SE</Ctry>
+				</PstlAdr>
+				<CtryOfRes>SE</CtryOfRes>
+			</UltmtDbtr>
+			<ChrgBr>SLEV</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>2020051612345</InstrId>
+					<EndToEndId>2020051612345</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">6205.75</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>BBRUBEBB010</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>European Payments Council</Nm>
+					<PstlAdr>
+						<StrtNm>Avenue de Tervueren-Tervyyren straat</StrtNm>
+						<BldgNb>24 (3rd floor)></BldgNb>
+						<PstCd>B-1040</PstCd>
+						<TwnNm>Bruxelles-Brussels</TwnNm>
+						<Ctry>BE</Ctry>
+					</PstlAdr>
+					<CtryOfRes>BE</CtryOfRes>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>BE10310101725402</IBAN>
+					</Id>
+				</CdtrAcct>
+				<UltmtCdtr>
+					<Nm>Department for EPC DIRECTIVES </Nm>
+					<Id>
+						<OrgId>
+							<PrtryId>
+								<Id>CAD59912-EUR</Id>
+							</PrtryId>
+						</OrgId>
+					</Id>
+					<CtryOfRes>BE</CtryOfRes>
+				</UltmtCdtr>
+				<Purp>
+					<Cd>SUPP</Cd>
+				</Purp>
+				<RgltryRptg>
+					<DbtCdtRptgInd>DEBT</DbtCdtRptgInd>
+					<RgltryDtls>
+						<Cd>101</Cd>
+					</RgltryDtls>
+				</RgltryRptg>
+				<RmtInf>
+					<Strd>
+						<CdtrRefInf>
+							<CdtrRefTp>
+								<Cd>SCOR</Cd>
+							</CdtrRefTp>
+							<CdtrRef>10000010225201</CdtrRef>
+						</CdtrRefInf>
+					</Strd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<PmtInf>
+			<PmtInfId>SEPA SAME DAY1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+				<LclInstrm>
+					<Cd>SDCL</Cd>
+				</LclInstrm>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-16</ReqdExctnDt>
+			<Dbtr>
+				<Nm>PAYMENT FACTORY OUTLET</Nm>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>FI9133010001105675</IBAN>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEFIHX</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SLEV</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>SDE20</InstrId>
+					<EndToEndId>SDE20</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">100.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>NDEAFIHH</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>CREDITOR OY/FINANCE</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FI6329501800020582</IBAN>
+					</Id>
+				</CdtrAcct>
+				<Purp>
+					<Cd>SUPP</Cd>
+				</Purp>
+				<RmtInf>
+					<Ustrd>SEPA SAME DAY EXECUTION</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>

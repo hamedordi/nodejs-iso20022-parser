@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.054.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:camt.054.001.02 file:///C:/Users/s90251/Desktop/files/Template/camt.054.001.02.xsd">
+	<BkToCstmrDbtCdtNtfctn>
+		<GrpHdr>
+			<MsgId>3075714</MsgId>
+			<CreDtTm>2018-12-07T07:03:19+01:00</CreDtTm>
+			<MsgRcpt>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</MsgRcpt>
+			<AddtlInf>/CRED/</AddtlInf>
+		</GrpHdr>
+		<Ntfctn>
+			<Id>STOIID65181207070136000002</Id>
+			<CreDtTm>2018-12-07T07:01:36</CreDtTm>
+			<Acct>
+				<Id>
+					<Othr>
+						<Id>52950001691147</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+				<Ccy>DKK</Ccy>
+				<Ownr>
+					<Nm>TEST Customer</Nm>
+					<Id>
+						<OrgId>
+							<Othr>
+								<Id>00331127800005</Id>
+								<SchmeNm>
+									<Cd>BANK</Cd>
+								</SchmeNm>
+							</Othr>
+						</OrgId>
+					</Id>
+				</Ownr>
+				<Svcr>
+					<FinInstnId>
+						<BIC>ESSEDKKKXXX</BIC>
+					</FinInstnId>
+				</Svcr>
+			</Acct>
+			<RltdAcct>
+				<Id>
+					<Othr>
+						<Id>52950001692690</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+			</RltdAcct>
+			<TxsSummry>
+				<TtlCdtNtries>
+					<NbOfNtries>1</NbOfNtries>
+					<Sum>12581.81</Sum>
+				</TtlCdtNtries>
+			</TxsSummry>
+			<Ntry>
+				<NtryRef>CPH 18120719122-0000019</NtryRef>
+				<Amt Ccy="DKK">12581.81</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-07</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-07</Dt>
+				</ValDt>
+				<AcctSvcrRef>CPH 18120719122-0000019</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>IDDT</Cd>
+							<SubFmlyCd>PMDD</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>TRF</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<MsgId>PBXLX-MTHGL</MsgId>
+							<AcctSvcrRef>CPHXMT01201812070152019122000001</AcctSvcrRef>
+							<PmtInfId>PBXLX-MTHGL</PmtInfId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="DKK">12581.81</Amt>
+							</TxAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<TwnNm>Town name</TwnNm>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<BIC>ESSEDKKKXXX</BIC>
+								</FinInstnId>
+							</DbtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>4299918122201</Ustrd>
+							<Strd>
+								<RfrdDocAmt>
+									<RmtdAmt Ccy="DKK">12581.81</RmtdAmt>
+								</RfrdDocAmt>
+								<CdtrRefInf>
+									<Tp>
+										<CdOrPrtry>
+											<Cd>SCOR</Cd>
+										</CdOrPrtry>
+									</Tp>
+									<Ref>98765432</Ref>
+								</CdtrRefInf>
+							</Strd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+			</Ntry>
+		</Ntfctn>
+	</BkToCstmrDbtCdtNtfctn>
+</Document>

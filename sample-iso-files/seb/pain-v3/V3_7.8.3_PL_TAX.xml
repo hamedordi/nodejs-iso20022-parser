@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 7.8.3 Polish Tax payment with structured and unstructured input-->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>TAXS-123456789-V3-01</MsgId>
+			<CreDtTm>2021-05-10T05:59:12</CreDtTm>
+			<NbOfTxs>2</NbOfTxs>
+			<InitgPty>
+				<Nm>INIT PTY</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00330989060005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<!-- Structured input -->
+		<PmtInf>
+			<PmtInfId>PL-TAXS-01_12345_2</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<CtgyPurp>
+					<Cd>TAXS</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2021-05-10</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR NAME</Nm>
+				<PstlAdr>
+					<AdrLine>Złota 59</AdrLine>
+					<AdrLine>00-870 Warszawa</AdrLine>
+					<AdrLine>PL</AdrLine>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>20006048</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEPLPW</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>PL-TAXS-01-01_12345_2</InstrId>
+					<EndToEndId>PL-TAXS-01-01_12345_2</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="PLN">122.03</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>CREDITOR</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>PL37101010100164342222000000</IBAN>
+					</Id>
+				</CdtrAcct>
+				<Tax>
+					<Dbtr>
+						<TaxId>1080002093</TaxId>
+					</Dbtr>
+					<Rcrd>
+						<Tp>15M08</Tp>
+						<FrmsCd>VAT-7</FrmsCd>
+					</Rcrd>
+				</Tax>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<!-- Unstructured input -->
+		<PmtInf>
+			<PmtInfId>5515455551_ASDFGHJ</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<CtgyPurp>
+					<Cd>TAXS</Cd>
+				</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2021-05-10</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR NAME</Nm>
+				<PstlAdr>
+					<AdrLine>Zlota59</AdrLine>
+					<AdrLine>00-870 Warszawa</AdrLine>
+					<AdrLine>PL</AdrLine>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>PL76237000080000000020006048</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEPLPW</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>4845155220000515</InstrId>
+					<EndToEndId>4845155220000515</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="PLN">91102.11</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>Test Name</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<Othr>
+							<Id>74101016740017332222000000</Id>
+							<SchmeNm>
+								<Cd>BBAN</Cd>
+							</SchmeNm>
+						</Othr>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>/TI/N1080002093/OKR/15M09/SFP/VAT-7</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

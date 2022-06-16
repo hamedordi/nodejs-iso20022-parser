@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.002.001.03 pain.002.001.03.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.03">
+	<CstmrPmtStsRpt>
+		<GrpHdr>
+			<MsgId>5609457</MsgId>
+			<CreDtTm>2020-04-01T09:27:26</CreDtTm>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>ESSESESS</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+						<Othr>
+							<Id>0033072166</Id>
+							<SchmeNm>
+								<Cd>CUST</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<OrgnlGrpInfAndSts>
+			<OrgnlMsgId>15245</OrgnlMsgId>
+			<OrgnlMsgNmId>pain.001.001.03</OrgnlMsgNmId>
+			<OrgnlNbOfTxs>2</OrgnlNbOfTxs>
+			<OrgnlCtrlSum>28218</OrgnlCtrlSum>
+		</OrgnlGrpInfAndSts>
+		<OrgnlPmtInfAndSts>
+			<OrgnlPmtInfId>15245 1</OrgnlPmtInfId>
+			<OrgnlNbOfTxs>2</OrgnlNbOfTxs>
+			<OrgnlCtrlSum>28218</OrgnlCtrlSum>
+			<!--(if all correct,   if not -> PART  - see below example on pain.002 in that case) -->
+			<PmtInfSts>ACSP</PmtInfSts>
+			<TxInfAndSts>
+				<StsId>STOESI05202004010841583174000001</StsId>
+				<OrgnlInstrId>645346300087</OrgnlInstrId>
+				<OrgnlEndToEndId>15245 1 22</OrgnlEndToEndId>
+				<TxSts>ACSP</TxSts>
+				<AcctSvcrRef>STOESI05202004010841583174000001</AcctSvcrRef>
+				<OrgnlTxRef>
+					<Amt>
+						<InstdAmt Ccy="SEK">25116.00</InstdAmt>
+					</Amt>
+					<ReqdExctnDt>2020-04-01</ReqdExctnDt>
+					<Cdtr>
+						<Nm>Company</Nm>
+					</Cdtr>
+				</OrgnlTxRef>
+			</TxInfAndSts>
+			<TxInfAndSts>
+				<StsId>STOESI05202004010841583174000002</StsId>
+				<OrgnlInstrId>645346300088</OrgnlInstrId>
+				<OrgnlEndToEndId>15245 1 23</OrgnlEndToEndId>
+				<TxSts>ACSP</TxSts>
+				<AcctSvcrRef>STOESI05202004010841583174000002</AcctSvcrRef>
+				<OrgnlTxRef>
+					<Amt>
+						<InstdAmt Ccy="SEK">3102.00</InstdAmt>
+					</Amt>
+					<ReqdExctnDt>2020-04-01</ReqdExctnDt>
+					<Cdtr>
+						<Nm>Company 2</Nm>
+					</Cdtr>
+				</OrgnlTxRef>
+			</TxInfAndSts>
+		</OrgnlPmtInfAndSts>
+	</CstmrPmtStsRpt>
+</Document>

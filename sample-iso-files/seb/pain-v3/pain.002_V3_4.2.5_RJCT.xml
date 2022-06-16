@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.002.001.03 pain.002.001.03.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.03">
+	<CstmrPmtStsRpt>
+		<GrpHdr>
+			<MsgId>5609457</MsgId>
+			<CreDtTm>2020-04-01T09:27:26</CreDtTm>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>ESSESESS</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+						<Othr>
+							<Id>0033072166</Id>
+							<SchmeNm>
+								<Cd>CUST</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<OrgnlGrpInfAndSts>
+			<OrgnlMsgId>65201</OrgnlMsgId>
+			<OrgnlMsgNmId>pain.001.001.03</OrgnlMsgNmId>
+			<OrgnlNbOfTxs>2</OrgnlNbOfTxs>
+			<OrgnlCtrlSum>28218</OrgnlCtrlSum>
+		</OrgnlGrpInfAndSts>
+		<OrgnlPmtInfAndSts>
+			<OrgnlPmtInfId>65201 1</OrgnlPmtInfId>
+			<OrgnlNbOfTxs>2</OrgnlNbOfTxs>
+			<OrgnlCtrlSum>28218</OrgnlCtrlSum>
+			<PmtInfSts>RJCT</PmtInfSts>
+			<StsRsnInf>
+				<Rsn>
+					<Cd>RC07</Cd>
+				</Rsn>
+				<AddtlInf>InvalidCreditorBICIdentifier</AddtlInf>
+			</StsRsnInf>
+			<TxInfAndSts>
+				<OrgnlTxRef>
+					<ReqdExctnDt>2020-04-01</ReqdExctnDt>
+				</OrgnlTxRef>
+			</TxInfAndSts>
+		</OrgnlPmtInfAndSts>
+	</CstmrPmtStsRpt>
+</Document>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.054.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:camt.054.001.02 file:///C:/Users/s90251/Desktop/files/Template/camt.054.001.02.xsd">
+	<BkToCstmrDbtCdtNtfctn>
+		<GrpHdr>
+			<MsgId>3174731</MsgId>
+			<CreDtTm>2018-12-25T03:03:43+01:00</CreDtTm>
+			<MsgRcpt>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00331127800005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</MsgRcpt>
+			<AddtlInf>/NOTF/</AddtlInf>
+		</GrpHdr>
+		<Ntfctn>
+			<Id>STOIID45181225030141000030</Id>
+			<CreDtTm>2018-12-25T03:01:41+01:00</CreDtTm>
+			<Acct>
+				<Id>
+					<Othr>
+						<Id>80625524</Id>
+						<SchmeNm>
+							<Cd>BBAN</Cd>
+						</SchmeNm>
+					</Othr>
+				</Id>
+				<Ccy>SGD</Ccy>
+				<Ownr>
+					<Nm>TEST Customer</Nm>
+					<Id>
+						<OrgId>
+							<Othr>
+								<Id>00331127800005</Id>
+								<SchmeNm>
+									<Cd>BANK</Cd>
+								</SchmeNm>
+							</Othr>
+						</OrgId>
+					</Id>
+				</Ownr>
+				<Svcr>
+					<FinInstnId>
+						<BIC>ESSESGSGXXX</BIC>
+					</FinInstnId>
+				</Svcr>
+			</Acct>
+			<TxsSummry>
+				<TtlCdtNtries>
+					<NbOfNtries>1</NbOfNtries>
+					<Sum>189</Sum>
+				</TtlCdtNtries>
+				<TtlDbtNtries>
+					<NbOfNtries>1</NbOfNtries>
+					<Sum>203</Sum>
+				</TtlDbtNtries>
+			</TxsSummry>
+		<Ntry>
+				<NtryRef>SIN 18122400659-0000001</NtryRef>
+				<Amt Ccy="SGD">203.00</Amt>
+				<CdtDbtInd>DBIT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-24</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-24</Dt>
+				</ValDt>
+				<AcctSvcrRef>SIN 18122400659-0000001</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>ICDT</Cd>
+							<SubFmlyCd>NTAV</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>103</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>STONCM01181221155402006601000001</AcctSvcrRef>
+							<PmtInfId>1894</PmtInfId>
+						</Refs>
+						<AmtDtls>
+							<InstdAmt>
+								<Amt Ccy="SGD">200.00</Amt>
+							</InstdAmt>
+							<TxAmt>
+								<Amt Ccy="SGD">203.00</Amt>
+							</TxAmt>
+							<PrtryAmt>
+								<Tp>IBS</Tp>
+								<Amt Ccy="SGD">200.00</Amt>
+							</PrtryAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>TEST Customer</Nm>
+							</Dbtr>
+							<Cdtr>
+								<Nm>Beneficiary</Nm>
+							</Cdtr>
+							<CdtrAcct>
+								<Id>
+									<Othr>
+										<Id>0101010101</Id>
+										<SchmeNm>
+											<Cd>BBAN</Cd>
+										</SchmeNm>
+									</Othr>
+								</Id>
+							</CdtrAcct>
+						</RltdPties>
+						<RltdAgts>
+							<DbtrAgt>
+								<FinInstnId>
+									<Nm>Skandinaviska Enskilda Banken</Nm>
+								</FinInstnId>
+							</DbtrAgt>
+							<CdtrAgt>
+								<FinInstnId>
+									<BIC>DBSSSGSGXXX</BIC>
+								</FinInstnId>
+							</CdtrAgt>
+						</RltdAgts>
+						<Purp>
+							<Cd>OTHR</Cd>
+						</Purp>
+						<RmtInf>
+							<Ustrd>202425786E</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>PO2612/14</AddtlNtryInf>
+			</Ntry>
+			<Ntry>
+				<NtryRef>SIN 18122400869-0000002</NtryRef>
+				<Amt Ccy="SGD">189.00</Amt>
+				<CdtDbtInd>CRDT</CdtDbtInd>
+				<Sts>BOOK</Sts>
+				<BookgDt>
+					<Dt>2018-12-24</Dt>
+				</BookgDt>
+				<ValDt>
+					<Dt>2018-12-24</Dt>
+				</ValDt>
+				<AcctSvcrRef>SIN 18122400869-0000002</AcctSvcrRef>
+				<BkTxCd>
+					<Domn>
+						<Cd>PMNT</Cd>
+						<Fmly>
+							<Cd>RCDT</Cd>
+							<SubFmlyCd>NTAV</SubFmlyCd>
+						</Fmly>
+					</Domn>
+					<Prtry>
+						<Cd>103</Cd>
+						<Issr>SWIFT</Issr>
+					</Prtry>
+				</BkTxCd>
+				<NtryDtls>
+					<TxDtls>
+						<Refs>
+							<AcctSvcrRef>SINVBT45181224094602000020000002</AcctSvcrRef>
+							<InstrId>PO2412/71</InstrId>
+						</Refs>
+						<AmtDtls>
+							<TxAmt>
+								<Amt Ccy="SGD">189.00</Amt>
+							</TxAmt>
+							<PrtryAmt>
+								<Tp>IBS</Tp>
+								<Amt Ccy="SGD">189.00</Amt>
+							</PrtryAmt>
+						</AmtDtls>
+						<RltdPties>
+							<Dbtr>
+								<Nm>Debtor</Nm>
+								<PstlAdr>
+									<AdrLine>Line 1</AdrLine>
+									<AdrLine>Line 2</AdrLine>
+								</PstlAdr>
+							</Dbtr>
+							<Cdtr>
+								<Nm>TEST Customer</Nm>
+							</Cdtr>
+						</RltdPties>
+						<RltdAgts>
+							<CdtrAgt>
+								<FinInstnId>
+									<BIC>ESSESGSGXXX</BIC>
+								</FinInstnId>
+							</CdtrAgt>
+						</RltdAgts>
+						<RmtInf>
+							<Ustrd>416813616</Ustrd>
+						</RmtInf>
+					</TxDtls>
+				</NtryDtls>
+				<AddtlNtryInf>35818122400869M01C0  00 I</AddtlNtryInf>
+			</Ntry>
+		</Ntfctn>
+	</BkToCstmrDbtCdtNtfctn>
+</Document>

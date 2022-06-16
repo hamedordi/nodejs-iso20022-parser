@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.02">
+	<pain.002.001.02>
+		<GrpHdr>
+			<MsgId>47497</MsgId>
+			<CreDtTm>2020-05-17T11:03:13+01:00</CreDtTm>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<BIC>ESSESESSXXX</BIC>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<OrgnlGrpInfAndSts>
+			<OrgnlMsgId>575878</OrgnlMsgId>
+			<OrgnlMsgNmId>pain.001.001.02</OrgnlMsgNmId>
+			<OrgnlNbOfTxs>3</OrgnlNbOfTxs>
+			<OrgnlCtrlSum>53687.00</OrgnlCtrlSum>
+			<GrpSts>RJCT</GrpSts>
+		</OrgnlGrpInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000001</StsId>
+			<OrgnlPmtInfId>2134141 1</OrgnlPmtInfId>
+			<TxSts>RJCT</TxSts>
+				<StsRsnInf>
+					<StsRsn>
+						<Cd>NARR</Cd>
+					</StsRsn>
+					<AddtlStsRsnInf>AC02 InvalidDebtorAccountNumber</AddtlStsRsnInf>
+			</StsRsnInf>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="SEK">46781.00</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 1</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000002</StsId>
+			<OrgnlPmtInfId>2134141 1</OrgnlPmtInfId>
+			<TxSts>RJCT</TxSts>
+			<StsRsnInf>
+				<StsRsn>
+					<Cd>NARR</Cd>
+				</StsRsn>
+				<AddtlStsRsnInf>AC02 InvalidDebtorAccountNumber</AddtlStsRsnInf>
+			</StsRsnInf>
+				<OrgnlTxRef>
+					<Amt>
+						<InstdAmt Ccy="SEK">5782.00</InstdAmt>
+					</Amt>
+					<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+					<Cdtr>
+						<Nm>COMPANY 2</Nm>
+					</Cdtr>
+				</OrgnlTxRef>
+		</TxInfAndSts>
+		<TxInfAndSts>
+			<StsId>STOESI05202005170841583174000003</StsId>
+			<OrgnlPmtInfId>2134141 1</OrgnlPmtInfId>
+			<TxSts>RJCT</TxSts>
+			<StsRsnInf>
+				<StsRsn>
+					<Cd>NARR</Cd>
+				</StsRsn>
+				<AddtlStsRsnInf>AC02 InvalidDebtorAccountNumber</AddtlStsRsnInf>
+			</StsRsnInf>
+			<OrgnlTxRef>
+				<Amt>
+					<InstdAmt Ccy="SEK">1124.00</InstdAmt>
+				</Amt>
+				<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+				<Cdtr>
+					<Nm>COMPANY 3</Nm>
+				</Cdtr>
+			</OrgnlTxRef>
+		</TxInfAndSts>
+	</pain.002.001.02>
+</Document>

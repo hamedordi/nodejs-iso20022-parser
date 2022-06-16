@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<!-- SEB ISO20022 V02 MIG, 7.8.1 Normal local vendor payments (Elixir) -->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>PL-CT1</MsgId>
+			<CreDtTm>2020-05-17T09:30:47</CreDtTm>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>3</NbOfTxs>
+			<Grpg>MIXD</Grpg>
+			<InitgPty>
+				<Nm>PAYMENT FACTORY OY</Nm>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>PL-CT1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<ClrChanl>MPNS</ClrChanl>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>PL76237000080000000012345678</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEPLPW</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>DEBT</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>PL-CT11</InstrId>
+					<EndToEndId>PL-CT11</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="PLN">36.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>INGBPLPW</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>CREDITOR NAME1</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>PL21105015591000009012345678</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>298/2012/S</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>PL-CT12</InstrId>
+					<EndToEndId>PL-CT12</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="PLN">28.98</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<ClrSysMmbId>
+							<Id>PLKNR10501559</Id>
+						</ClrSysMmbId>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>CREDITOR NAME2</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<PrtryAcct>
+							<Id>95105015591000009012345678</Id>
+						</PrtryAcct>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>03/06/2012</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>PL-CT13</InstrId>
+					<EndToEndId>PL-CT13</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="PLN">4.92</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>CITIPLPX</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>ANOTHER CREDITOR.</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<BBAN>95105015591000009012345678</BBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>490008530612 490400940512</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>

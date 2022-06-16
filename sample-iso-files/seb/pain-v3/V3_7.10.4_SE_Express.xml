@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO 20022 V03 MIG, 7.10.4 Domestic Express payment within Sweden in SEK -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>SEBBANDOMSTRD</MsgId>
+			<CreDtTm>2021-05-10T09:24:07</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>24500000.00</CtrlSum>
+			<InitgPty>
+				<Nm>SE COMPANY</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00333311110005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>SEBBANDOMSTRD1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>URGP</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2021-05-10</ReqdExctnDt>
+			<Dbtr>
+				<Nm>SE COMPANY</Nm>
+				<Id>
+					<OrgId>
+						<Othr>
+							<Id>00333311110005</Id>
+							<SchmeNm>
+								<Cd>BANK</Cd>
+							</SchmeNm>
+						</Othr>
+					</OrgId>
+				</Id>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>SE3550000000054910000003</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSESESS</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>SEBBANDOMSTRD1</InstrId>
+					<EndToEndId>SEBBANDOMSTRD11</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="SEK">24500000.00</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>NDEASESSXXX</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>Test Name</Nm>
+					<!-- Full name of the Creditor is a must for domestic payments within Sweden -->
+					<PstlAdr>
+						<StrtNm>Testgatan 14</StrtNm>
+						<PstCd>12345</PstCd>
+						<TwnNm>STOCKHOLM</TwnNm>
+					</PstlAdr>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>SE95300000000123456789012</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>Invoice 12345</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

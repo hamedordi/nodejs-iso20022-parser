@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.02">
+	<pain.002.001.02>
+		<GrpHdr>
+			<MsgId>1298789</MsgId>
+			<CreDtTm>2020-05-17T14:16:24+01:00</CreDtTm>
+			<InitgPty>
+				<Id>
+					<OrgId>
+						<BIC>ESSESESSXXX</BIC>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<OrgnlGrpInfAndSts>
+			<OrgnlMsgId>A0-22532-1553-38361</OrgnlMsgId>
+			<OrgnlMsgNmId>pain.001.001.02</OrgnlMsgNmId>
+			<OrgnlCreDtTm>2017-05-17T14:00:00</OrgnlCreDtTm>
+			<GrpSts>RJCT</GrpSts>
+			<StsRsnInf>
+				<StsRsn>
+					<Cd>MD02</Cd>
+				</StsRsn>
+			</StsRsnInf>
+		</OrgnlGrpInfAndSts>
+	</pain.002.001.02>
+</Document>

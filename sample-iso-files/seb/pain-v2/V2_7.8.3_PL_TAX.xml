@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SEB ISO20022 V02 MIG, 7.8.3 Polish Tax payment (TAX) -->
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02 pain.001.001.02.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<pain.001.001.02>
+		<GrpHdr>
+			<MsgId>2020051612345</MsgId>
+			<CreDtTm>2020-05-17T05:59:12</CreDtTm>
+			<BtchBookg>false</BtchBookg>
+			<NbOfTxs>2</NbOfTxs>
+			<Grpg>MIXD</Grpg>
+			<InitgPty>
+				<Nm>INIT PTY</Nm>
+				<Id>
+					<OrgId>
+						<BkPtyId>00331127800005</BkPtyId>
+					</OrgId>
+				</Id>
+			</InitgPty>
+		</GrpHdr>
+		<!-- Structured input -->
+		<PmtInf>
+			<PmtInfId>2020051612345-1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<ClrChanl>MPNS</ClrChanl>
+				<CtgyPurp>TAXS</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR</Nm>
+				<PstlAdr>
+					<AdrLine>Kwiatowa 15</AdrLine>
+					<AdrLine>00-870 Warszawa</AdrLine>
+					<Ctry>PL</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>PL76237000080000000020006048</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEPLPW</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>2020051612345-1</InstrId>
+					<EndToEndId>2020051612345-1</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="PLN">122.00</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>CREDITOR</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<BBAN>74101016740017332222000000</BBAN>
+					</Id>
+				</CdtrAcct>
+				<Tax>
+					<DbtrTaxId>1080002093</DbtrTaxId>
+					<TaxTpInf>
+						<CertId>VAT-7</CertId>
+						<TaxTp>
+							<CtgyDesc>11M07</CtgyDesc>
+						</TaxTp>
+					</TaxTpInf>
+				</Tax>
+				<RmtInf>
+					<Ustrd>PODATEK ZA 2011</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+		<!-- Unstructured input -->
+		<PmtInf>
+			<PmtInfId>2020051612345-2</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<PmtTpInf>
+				<ClrChanl>MPNS</ClrChanl>
+				<CtgyPurp>TAXS</CtgyPurp>
+			</PmtTpInf>
+			<ReqdExctnDt>2020-05-17</ReqdExctnDt>
+			<Dbtr>
+				<Nm>DEBTOR</Nm>
+				<PstlAdr>
+					<AdrLine>Kwiatowa 15</AdrLine>
+					<AdrLine>00-870 Warszawa</AdrLine>
+					<Ctry>PL</Ctry>
+				</PstlAdr>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>PL76237000080000000020006048</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>ESSEPLPW</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SHAR</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>2020051612345-2</InstrId>
+					<EndToEndId>2020051612345-2</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="PLN">122.00</InstdAmt>
+				</Amt>
+				<Cdtr>
+					<Nm>CREDITOR</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<BBAN>74101016740017332222000000</BBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>/TI/N1080002093/OKR/11M07/SFP/VAT-7</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</pain.001.001.02>
+</Document>
