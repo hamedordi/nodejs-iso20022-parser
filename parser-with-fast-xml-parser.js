@@ -47,6 +47,7 @@ fs.readFile(argv.f, function (err, data) {
     if (err) {
         return console.log(err);
     }
+    console.log("xml data ->", data);
     let jsonObj = parser.parse(data);
     console.log("to json ->", JSON.stringify(jsonObj, null, '\t'));
     fs.writeFile('./parser-output.json', JSON.stringify(jsonObj, null, '\t'), function (err, d) {
